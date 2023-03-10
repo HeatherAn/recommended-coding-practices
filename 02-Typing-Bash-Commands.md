@@ -207,6 +207,6 @@ Interested to practice exercises about Bash? Visit the [Software Carpentry lesso
 ________________________
 
 [Previous : 01 - Unix Shell commands](https://github.com/HeatherAn/recommended-coding-practices/blob/main/01-Unix-Shell-Commands.md)  
-[Next     : Version Control with Git](Version-Control-with-Git)  
+[Next     : 03 - Version Control With Git](https://github.com/HeatherAn/recommended-coding-practices/blob/main/03-Version-Control-With-Git.md)  
 
 [Go back to README](https://github.com/HeatherAn/recommended-coding-practices#readme)
