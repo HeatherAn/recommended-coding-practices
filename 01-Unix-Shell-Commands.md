@@ -18,6 +18,6 @@ The most popular Unix Shell is **Bash**: the **Bourne Again SHell**. But there a
 ________________________
 
 [Previous : README](https://github.com/HeatherAn/recommended-coding-practices#readme)  
-[Next     : Typing Bash Commands](Typing-Bash-Commands)  
+[Next     : 02 - Typing Bash Commands](https://github.com/HeatherAn/recommended-coding-practices/blob/main/02-Typing-Bash-Commands.md)  
 
 [Go back to README](https://github.com/HeatherAn/recommended-coding-practices#readme)
