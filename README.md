@@ -2,20 +2,29 @@
 
 We are not professional coders, but we all must code to **survive!** 
 
+![code-1084923_1280](uploads/857a7670be55fd972ab8b9b91a40b973/code-1084923_1280.png)
+
+Image by [Johnson Martin](https://pixabay.com/users/johnsonmartin-724525/?utm_source=link-attribution&amp;utm_medium=referral&amp;utm_campaign=image&amp;utm_content=1084923") from [Pixabay](https://pixabay.com/?utm_source=link-attribution&amp;utm_medium=referral&amp;utm_campaign=image&amp;utm_content=1084923)
+
 In this **Recommended Coding Practices** repository you will find introductory and broad material to start developing **proper code** and promote further **self-study**. 
 
+_______________________
+
 The material was originally designed for researchers within the Department of [Aerospace Structures and Materials](https://www.tudelft.nl/lr/organisatie/afdelingen/aerospace-structures-and-materials) of the [Faculty of Aerospace Engineering (AE)](https://www.tudelft.nl/en/ae) of the Delft University of Technology (TU Delft) in The Netherlands. 
+________________________
 
 Practice and enjoy!
 
 ## Contents
 
-* [Unix Shell commands](Unix-Shell-Commands): learn how to **navigate** your directories and files using the terminal.
-* [Version control with Git](Version-Control-with-Git): learn the basics of doing **version control** on your files.
-* [Project structure](Project-Structure): learn tips on how to **structure** a code project.
-* [Code writing conventions](Coding-Conventions): get used to code **consistently**.
-* [Code documentation](Code-Documentation): make sure the code is **understandable and can be reused** by others!
-* [Errors and testing code](Code-Errors): learn tips on how to **test** the code. 
+- [Unix Shell commands](Unix-Shell-Commands)
+- [Version control with Git](Version-Control-with-Git)
+- [Project structure](Project-Structure)
+- [Code writing conventions](Coding-Conventions)  
+- [Environment variables](Environment-Variables) 
+- [Make command](Make-Command)
+- Guidelines on what to do once you [**finish a project**](What-to-do-once-I-finish).
+- Guideline on [**how to contribute to the Wiki**](How-to-Change-the-Wiki)
 
 
 ## How to follow the material?
