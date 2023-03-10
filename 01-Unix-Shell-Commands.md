@@ -17,7 +17,7 @@ The most popular Unix Shell is **Bash**: the **Bourne Again SHell**. But there a
 
 ________________________
 
-[Previous : README](README)  
+[Previous : README](https://github.com/HeatherAn/recommended-coding-practices#readme)  
 [Next     : Typing Bash Commands](Typing-Bash-Commands)  
 
-[Go back to Purpose](README)
+[Go back to README](https://github.com/HeatherAn/recommended-coding-practices#readme)
