@@ -17,7 +17,7 @@ Practice and enjoy!
 
 ## Contents
 
-- [Unix Shell commands](Unix-Shell-Commands)
+- [Unix Shell commands](01-Unix-Shell-Commands)
 - [Version control with Git](Version-Control-with-Git)
 - [Project structure](Project-Structure)
 - [Code writing conventions](Coding-Conventions)  
@@ -38,5 +38,4 @@ The material has been built upon from the content provided by open sources such 
 
 _________________________
 
-[Previous : Purpose](Purpose)  
-[Next     : Unix Shell commands](Unix-Shell-Commands)
+[Next     : 01 - Unix Shell commands](01-Unix-Shell-Commands)
