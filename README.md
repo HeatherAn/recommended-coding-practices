@@ -17,7 +17,7 @@ Practice and enjoy!
 
 ## Contents
 
-- [Unix Shell commands](01-Unix-Shell-Commands)
+- [Unix Shell commands](https://github.com/HeatherAn/recommended-coding-practices/blob/main/01-Unix-Shell-Commands.md)
 - [Version control with Git](Version-Control-with-Git)
 - [Project structure](Project-Structure)
 - [Code writing conventions](Coding-Conventions)  
@@ -38,4 +38,4 @@ The material has been built upon from the content provided by open sources such 
 
 _________________________
 
-[Next     : 01 - Unix Shell commands](01-Unix-Shell-Commands)
+[Next     : 01 - Unix Shell commands](https://github.com/HeatherAn/recommended-coding-practices/blob/main/01-Unix-Shell-Commands.md)
