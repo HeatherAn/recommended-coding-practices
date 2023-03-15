@@ -103,7 +103,7 @@ In the following section, we will start by providing the basics to do version co
 
 ________________________
 
-[Previous : Version Control with Git](Version-Control-with-Git)  
-[Next     : Using Git for the First Time](Using-Git-for-the-First-Time)
+[Previous : 03 - Version Control With Git](https://github.com/HeatherAn/recommended-coding-practices/blob/main/03-Version-Control-With-Git.md)  
+[Next     : 05 - Using Git For the First Time](https://github.com/HeatherAn/recommended-coding-practices/blob/main/05-Using-Git-for-the-First-Time.md)
 
-[Go back to Purpose](Purpose)
+[Go back to README](https://github.com/HeatherAn/recommended-coding-practices#readme)
