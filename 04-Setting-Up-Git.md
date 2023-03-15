@@ -55,31 +55,41 @@ By deleting the `.git` directory (by doing `rm -rf .git`) you will be deleting t
 
 Also be aware **Git does not track the creation or removal of directories**. Git **only tracks files**. It will automatically “know” *where* the files are. But it will not track the creation of empty directories.
 
-## The Master Branch
+## The Master/Main Branch
 
 When doing `git init` in your device (work laptop/station), Git *by default* creates what is called: the **master** branch. This is the *local* **master** branch. 
 
 What is a branch? A **branch** can be thought of as a **separate copy** of a repository where you can make changes, and those changes will stay in that branch, unless you merge that branch with another branch. In that sense, each branch allows you to follow a **different line of development** of the project. We will cover more about **branches** in [**Using Git with Branches section**](Using-Git-with-Branches). You can have several branches for the same project, and you can name each branch differently. For now, just remember that `git init` creates a *local* **master** branch by default.
+
+## Change Master to Main in Github (for now)
+
+Since late 2020 Github has decided not to name the default branch as **master**, but change it to **main**. This change was decided because of the cultural sensitivity towards the word **master** (see more about the change [here](https://www.theserverside.com/feature/Why-GitHub-renamed-its-master-branch-to-main)). Keep in mind that *for now* this only applies to Github. But Git keeps on calling the default *local* branch as **master**. Thus, when working with Github, after initializing a Git repo with `git init`, you will have to rename the default *local* branch as **main**. Since this material considers you will be working with Github, go to the terminal and type the following to rename the **master** branch as **main**: 
+
+```
+`git branch -M main`
+```  
+
+From now onwards, we will refer to the default branch as **main**. If you follow this material with e.g. Gitlab, then consider **master** instead of **main**.  
 
 __________________________
 ### Important to keep in mind: do not nest Git repos!
 
 **Do not nest Git repositories**. In other words: do not do `git init` in a sub-directory of the directory where Git has already been initialized. **This will just create conflicts!** You only initialize a repository once. 
 
-For example: let's say you have the directory `~/Project_Z` where you will start working on a given project. Doing `git init` in `~/Project_Z` will initialize a repository there, and will create a *local* **master** branch there, where the changes of all files within `~/Project_Z` can be tracked. Let's say you are working in another project at the same time (not related to `Project_Z`) and you want to use Git to also track those files. Then in the directory of such project (let's say it is in `~/Documents/Project_W`) you do `git init` (only once!). This will initialize a different Git repository there. This repository will also have its own *local* **master** branch, where its own line of developments will be followed. 
+For example: let's say you have the directory `~/Project_Z` where you will start working on a given project. Doing `git init` in `~/Project_Z` will initialize a repository there, and will create a *local* **main** branch there, where the changes of all files within `~/Project_Z` can be tracked. Let's say you are working in another project at the same time (not related to `Project_Z`) and you want to use Git to also track those files. Then in the directory of such project (let's say it is in `~/Documents/Project_W`) you do `git init` (only once!). This will initialize a different Git repository there. This repository will also have its own *local* **main** branch, where its own line of developments will be followed. 
 __________________________
 
 ## The origin
 
-As we mentioned before, you will be working *locally* on your files in your *local* Git repository (which by default will be referred to as the *local* **master** branch). You will sync this *local* repository with the *remote* **Project_Y** of the TU Delft Gitlab. This *remote* repository is *locally* recognized by Git as the famous **origin**. In that way, Git "knows" to which *remote* **origin** (TU Delft Gitlab repository) the *local* changes you make should be synced to.
+As we mentioned before, you will be working *locally* on your files in your *local* Git repository (which by default will be referred to as the *local* **main** branch). You will sync this *local* repository with the *remote* **Project_Y** in Github. This *remote* repository is *locally* recognized by Git as the famous **origin**. In that way, Git "knows" to which *remote* **origin** (Github repository) the *local* changes you make should be synced to.
 
-The **origin** will also have its own **master** branch by default. Thus when looking at the *remote* branches of your project via the terminal, you will see it as the *remote* **origin/master** branch.
+The **origin** will also have its own **main** branch by default. Thus when looking at the *remote* branches of your project via the terminal, you will see it as the **remotes/origin/main** branch.
 
 ## Summarizing the initial situation
 
-- You will have a *local* Git repository, created by typing `git init` in a working directory (in your device). This will create the *local* **master** branch by default. Thus you will be working with a single *local* branch (initially).
-- You will have a *remote* Git repository in the TU Delft Gitlab instance (the **Project_Y** in the Gitlab **ASCM Professor X - Y** group). This *remote* repository also has a **master** branch (created by default when the project is created in Gitlab). This **master** branch is recognized by your *local* Git repository as the *remote* **origin/master**.
-- You will be making changes to your files *locally*. To "synchronize" the *remote* repository with all the changes you make *locally*, you will be *pushing* the changes to the *remote* repository. Likewise, if changes are made directly via the TU Delft Gitlab instance (so you make changes to the files *online*), you will be *pulling* those changes to your *local* repository, before start working *locally* on your files. 
+- You will have a *local* Git repository, created by typing `git init` in a working directory (in your device). This will create the *local* **master** branch by default. Since you will be working with Github, you need to rename this *local* **master** branch as **main** by using `git branch -M main`. Initially you will be working with this single *local* branch.
+- You will have a *remote* Git repository in Github (the **Project_Y** in Github). This *remote* repository also has a **main** branch (created by default when the project is created in Github). This **main** branch is recognized by your *local* Git repository as the **remotes/origin/main**.
+- You will be making changes to your files *locally*. To "synchronize" the *remote* repository with all the changes you make *locally*, you will be *pushing* the changes to the *remote* repository. Likewise, if changes are made directly via the Github (so you make changes to the files *online*), you will be *pulling* those changes to your *local* repository, before start working *locally* on your files. 
 
 This *pushing* and *pulling* workflow becomes extremely important when you work with more branches, either by yourself (you create branches to explore testing of the code for example) or in collaboration with others (each collaborator can have its own branch for example). We will cover more of this in the [Using Git with Branches section](Using-Git-with-Branches).
 
