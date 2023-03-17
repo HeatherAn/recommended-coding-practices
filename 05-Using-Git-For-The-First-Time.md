@@ -107,7 +107,7 @@ Type the following in the **terminal** (in the directory where the *local* repos
 
 ________________________
 
-[Previous : 04 Setting up Git](https://github.com/HeatherAn/recommended-coding-practices/blob/main/04-Setting-Up-Git.md)  
+[Previous : 04 - Setting up Git](https://github.com/HeatherAn/recommended-coding-practices/blob/main/04-Setting-Up-Git.md)  
 [Next : 06 - Using Git for the Nth Time](https://github.com/HeatherAn/recommended-coding-practices/blob/main/06-Using-Git-For-The-Nth-Time)
 
 [Go back to README](https://github.com/HeatherAn/recommended-coding-practices#readme)
