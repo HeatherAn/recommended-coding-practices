@@ -74,7 +74,7 @@ _________________________
 _________________________
 
 
-Interested in more?
+#### Interested in more?
 
 See the Gitlab cheatsheet [here](https://about.gitlab.com/images/press/git-cheat-sheet.pdf)
 
