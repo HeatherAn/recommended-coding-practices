@@ -18,9 +18,9 @@ Practice and enjoy!
 ## Contents
 
 - [Unix Shell commands](https://github.com/HeatherAn/recommended-coding-practices/blob/main/01-Unix-Shell-Commands.md)
-- [Version control with Git](Version-Control-with-Git)
-- [Project structure](Project-Structure)
-- [Code writing conventions](Coding-Conventions)  
+- [Version control with Git](https://github.com/HeatherAn/recommended-coding-practices/blob/main/03-Version-Control-with-Git.md)
+- [Project structure](https://github.com/HeatherAn/recommended-coding-practices/blob/main/09-Project-Structure.md)
+- [Coding conventions](https://github.com/HeatherAn/recommended-coding-practices/blob/main/10-Coding-Conventions.md)  
 - [Environment variables](Environment-Variables) 
 - [Make command](Make-Command)
 - Guidelines on what to do once you [**finish a project**](What-to-do-once-I-finish).
