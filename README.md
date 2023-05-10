@@ -23,8 +23,10 @@ Practice and enjoy!
 - [Coding conventions](https://github.com/HeatherAn/recommended-coding-practices/blob/main/10-Coding-Conventions.md)  
 - [Environment variables](Environment-Variables) 
 - [Make command](Make-Command)
-- Guidelines on what to do once you [**finish a project**](What-to-do-once-I-finish).
-- Guideline on [**how to contribute to the Wiki**](How-to-Change-the-Wiki)
+- Guidelines on what to do once you [**finish a project**](What-to-do-once-I-finish)  
+- Guideline on [**how to contribute to the Wiki**](How-to-Change-the-Wiki)  
+- [README templates](https://github.com/HeatherAn/recommended-coding-practices/tree/main/templates) for data, code and machine-learning projects
+
 
 
 ## How to follow the material?
