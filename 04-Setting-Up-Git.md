@@ -63,10 +63,10 @@ What is a branch? A **branch** can be thought of as a **separate copy** of a rep
 
 ## Change Master to Main in Github (for now)
 
-Since late 2020 Github has decided not to name the default branch as **master**, but change it to **main**. This change was decided because of the cultural sensitivity towards the word **master** (see more about the change [here](https://www.theserverside.com/feature/Why-GitHub-renamed-its-master-branch-to-main)). Keep in mind that *for now* this only applies to Github. But Git keeps on calling the default *local* branch as **master**. Thus, when working with Github, after initializing a Git repo with `git init`, you will have to rename the default *local* branch as **main**. Since this material considers you will be working with Github, go to the terminal and type the following to rename the **master** branch as **main**: 
+Since late 2020 Github has decided not to name the default branch as **master**, but change it to **main**. This change was decided because of the cultural sensitivity towards the word **master** (see more about the change [**here**](https://www.theserverside.com/feature/Why-GitHub-renamed-its-master-branch-to-main)). Keep in mind that *for now* this only applies to Github. But Git keeps on calling the default *local* branch as **master**. Thus, when working with Github, after initializing a Git repo with `git init`, you will have to rename the default *local* branch as **main**. Since this material considers you will be working with Github, go to the terminal and type the following to rename the **master** branch as **main**: 
 
 ```
-`git branch -M main`
+git branch -M main
 ```  
 
 From now onwards, we will refer to the default branch as **main**. If you follow this material with e.g. Gitlab, then consider **master** instead of **main**.  
@@ -91,7 +91,7 @@ The **origin** will also have its own **main** branch by default. Thus when look
 - You will have a *remote* Git repository in Github (the **Project_Y** in Github). This *remote* repository also has a **main** branch (created by default when the project is created in Github). This **main** branch is recognized by your *local* Git repository as the **remotes/origin/main**.
 - You will be making changes to your files *locally*. To "synchronize" the *remote* repository with all the changes you make *locally*, you will be *pushing* the changes to the *remote* repository. Likewise, if changes are made directly via the Github (so you make changes to the files *online*), you will be *pulling* those changes to your *local* repository, before start working *locally* on your files. 
 
-This *pushing* and *pulling* workflow becomes extremely important when you work with more branches, either by yourself (you create branches to explore testing of the code for example) or in collaboration with others (each collaborator can have its own branch for example). We will cover more of this in the [Using Git with Branches section](Using-Git-with-Branches).
+This *pushing* and *pulling* workflow becomes extremely important when you work with more branches, either by yourself (you create branches to explore testing of the code for example) or in collaboration with others (each collaborator can have its own branch for example). We will cover more of this in the [Using Git with Branches](https://github.com/HeatherAn/recommended-coding-practices/blob/main/07-Using-Git-With-Branches.md) section.
 
 ![Figure_GitBigSchemeIndiv](uploads/f5dca3c17f7f3e7d216af190f4c329f2/Figure_GitBigSchemeIndiv_Github.png)
 
