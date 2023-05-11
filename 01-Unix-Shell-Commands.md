@@ -10,9 +10,9 @@ The most popular Unix Shell is **Bash**: the **Bourne Again SHell**. But there a
 
 ## First things first: let's install Bash
 
-* [Installing Bash Shell on Windows](Install-Bash-on-Windows)
-* [Installing Bash Shell on Linux](Install-Bash-on-Linux)
-* [Installing Bash Shell on MacOS](Install-Bash-on-MacOS)
+* [Installing Bash Shell on Windows](https://github.com/HeatherAn/installations-instructions/blob/main/Install-Bash-on-Windows.md)
+* [Installing Bash Shell on Linux](https://github.com/HeatherAn/installations-instructions/blob/main/Install-Bash-on-Linux.md)
+* [Installing Bash Shell on MacOS](https://github.com/HeatherAn/installations-instructions/blob/main/Install-Bash-on-MacOS.md)
 
 
 ________________________
