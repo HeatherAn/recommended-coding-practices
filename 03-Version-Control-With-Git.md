@@ -47,9 +47,9 @@ In other words, keeping things online (i.e., in the *remote* **Project Y** in Gi
 
 ## First things first: let's install Git
 
-* [Installing Git on Windows](Install-Git-on-Windows)
-* [Installing Git on Linux](Install-Git-on-Linux)
-* [Installing Git on MacOS](Install-Git-on-MacOS)
+* [Installing Git on Windows](https://github.com/HeatherAn/installations-instructions/blob/main/Install-Git-on-Windows.md)
+* [Installing Git on Linux](https://github.com/HeatherAn/installations-instructions/blob/main/Install-Git-on-Linux.md)
+* [Installing Git on MacOS](https://github.com/HeatherAn/installations-instructions/blob/main/Install-Git-on-MacOS.md)
 
 
 ________________________
