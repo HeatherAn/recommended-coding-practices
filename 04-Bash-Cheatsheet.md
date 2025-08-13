@@ -65,6 +65,8 @@ The `?` is a different wildcard that **matches exactly one character**. For exam
 
 ## Requires extra installation
 
+download the executables (e.g. `rsync.exe`) from https://repo.msys2.org/msys/x86_64/. If more dll files are requested, download the OpenSSL package: https://repo.msys2.org/msys/x86_64/libopenssl-3.0.8-1-x86_64.pkg.tar.zst and copy the required DLLs into the same folder as the executables. 
+
 `zip -r <name_zip> <name_directory>`: compresses the contents of the directory `<name_directory>` into a zip file called `<name_zip>`.
 
 `tree <name_directory>`: prints the directory tree structure of the directory `<name_directory>` to the terminal (nice layout for the `README.md` of your repo!).
