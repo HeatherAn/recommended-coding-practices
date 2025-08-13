@@ -2,7 +2,7 @@
 
 The **Unix Shell** is a **command-line interface (CLI)** and a **scripting language**.  
 
-It allows you to **automatize** processes and **access** the files and directories of your computer in an effective way. Much more effective than using the computer system’s graphical user interface (see Figure below).  
+It allows you to **automatize** processes and **access** the files and directories of your computer in an efficient way. Much more efficient than using the computer system’s graphical user interface (see Figure below).  
 
 The most popular Unix Shell is **Bash**: the **Bourne Again SHell**. But there are many more! In this repository we will only focus on **Bash**.
 
