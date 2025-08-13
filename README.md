@@ -18,13 +18,15 @@ Practice and enjoy!
 ## Contents
 
 - [Unix Shell commands](https://github.com/HeatherAn/recommended-coding-practices/blob/main/01-Unix-Shell-Commands.md)
-- [Version control with Git](https://github.com/HeatherAn/recommended-coding-practices/blob/main/03-Version-Control-with-Git.md)
-- [Project structure](https://github.com/HeatherAn/recommended-coding-practices/blob/main/09-Project-Structure.md)
-- [Coding conventions](https://github.com/HeatherAn/recommended-coding-practices/blob/main/10-Coding-Conventions.md)  
-- [Environment variables](Environment-Variables) 
-- [Make command](Make-Command)
-- Guidelines on what to do once you [**finish a project**](What-to-do-once-I-finish)  
-- Guideline on [**how to contribute to the Wiki**](How-to-Change-the-Wiki)  
+- [Bash Cheatsheet](https://github.com/HeatherAn/recommended-coding-practices/blob/main/04-Bash-Cheatsheet.md)
+- [Environment variables](https://github.com/HeatherAn/recommended-coding-practices/blob/main/03-Environment-Variables.md) 
+- [Version control with Git](https://github.com/HeatherAn/recommended-coding-practices/blob/main/05-Version-Control-with-Git.md)  
+- [Git Cheatsheet](https://github.com/HeatherAn/recommended-coding-practices/blob/main/12-Git-Cheatsheet.md)
+- [Project structure](https://github.com/HeatherAn/recommended-coding-practices/blob/main/13-Project-Structure.md)
+- [Coding conventions](https://github.com/HeatherAn/recommended-coding-practices/blob/main/14-Coding-Conventions.md)  
+- Make command
+- Guidelines on what to do once you [**finish a project**](https://github.com/HeatherAn/recommended-coding-practices/blob/main/21-Publish-Or-Archive.md)  
+- Guideline on **how to contribute to the Wiki**
 - [README templates](https://github.com/HeatherAn/recommended-coding-practices/tree/main/templates) for data, code and machine-learning projects.  
     * The README for data (`README_data.txt`) is in txt format. Fill it in according to what is asked in commented text (in between `<!---` and `-->`). Then rename the file to README.txt.   
     * The README for code (`README_code.md`) and machine-learning projects (`README_ML.md`) are written in Markdown. Use the `Code` tab instead of the `Preview` tab to see the commented text. Fill in the template according to what is asked in commented text (in between `<!---` and `-->`). Then rename the file to README.md.    
