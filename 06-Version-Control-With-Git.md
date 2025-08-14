@@ -25,7 +25,7 @@ You are now in **Github**. In order for you to follow the material presented in 
 _____________________________________________________________
 ### Parenthesis
 
-Depending on your work, you might also have to *clone* an existing *project* from another group/user (which we will cover in [Using Git for the First Time section](https://github.com/HeatherAn/recommended-coding-practices/blob/main/08-Using-Git-for-the-First-Time.md)).
+Depending on your work, you might also have to *clone* an existing *project* from another group/user (which we will cover in [Using Git for the First Time](https://github.com/HeatherAn/recommended-coding-practices/blob/main/08-Using-Git-for-the-First-Time.md) section).
 ____________________________________________________________
 
 # Local versus Remote repository
