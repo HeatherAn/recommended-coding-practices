@@ -1,74 +1,79 @@
 # Bash Cheatsheet
 
-`pwd`: prints the working directory (i.e. the directory you are in).
+**Relative path** of a directory/file : the location of the directory/file starting from the *current* directory.    
 
-`cd /`: *takes* you to the **root directory**.
+**Absolute path** of a directory/file : the location of the directory/file starting from the *root* directory of the file system.   
 
-`cd path_dir` : *takes* you from your *current directory* (the directory you are in) to the `path_dir` directory. Consider:
-    The **relative path** of a directory/file specifies a **location starting from the *current* location**.  
-    The **absolute path** of a directory/file specifies a **location from the *root directory* of the file system** (from `/`).
-
-`cd`: *takes* you to your **home directory**.
-
-`cd ..` : *takes* you to the **parent directory** of the *current directory*.
-
-`cd -` : *takes* you to the previous directory you were in. 
-
-`ls`: lists the contents of the working directory (the directory you are in).
-
-`ls -lSh` : (with a lower case “L” and an upper case "S") lists the same as `ls -l` but with all files and directories sorted by size with the size in human readable format (KB, MB, etc.).
-
-`mkdir name_dir` : make (create) directory called `name_dir`. 
-
-`touch my_file` : creates an empty file in the *current* directory (replace `my_file` with the name of the file you want to create).
-
-`cat my_file.txt` : prints the contents of the `my_file.txt` file to the screen of the terminal (replace `my_file.txt` with the name of the file you want to see). 
-
-`mv file1 dir1` : when first argument is a *file* and second argument is a *directory*, `mv` moves the *file* to that *directory*. You can provide the name of the file (if the file is in the *current* directory) or the path of the file (if the file is in another folder.
-
-`mv file1 file2` : when both arguments are *files*, `mv` renames the first file to the second file (here you should replace `file1` by the name of the file you want to rename, and `file2` by the new name you want to give it). Both `file1` and `file2` can also be given as paths. 
-
-`cp file1 file2` : copies the file given as a first argument to the file given as the second argument (here you should replace `file1` by the name of the file you want to make a copy of, and `file2` by name of the file you want to be the copy of `file1`). Both files can also be given as paths to the respective files.
-
-For copying a directory and all its contents you can use the recursive flag `-r`, e.g. to back up a directory. For example: `cp –r thesis thesis_backup`.
-
-`rm file1` : deletes a file (replace `file1` by the file you want to delete). **Be aware this command deletes the file FOR-E-VER. So be careful!**
-
-`rm –r dir1` : deletes a directory (replace `dir1` by the directory you want to delete). As above: **be careful!**
-
-The asterisks `*` is a wildcard that **matches zero or more characters**. 
+Wildcard `*` : this wildcard matches zero or more characters.  
     
-The `?` is a different wildcard that **matches exactly one character**. For example: let's say *you are* in a given directory, and inside that directory you have 3 files called `data.txt`, `data1.txt` and `data10.txt`. Then `data?.txt` would refer only to `data1.txt`. While `data*.txt` would refer to `data.txt`, `data1.txt` and `data10.txt`.
+Wildcard `?` : this wildcard matches exactly one character.  
 
-`find <name_directory> -type f -name "<filename>"`: searches for a file called `<filename>` inside the directory `<name_directory>` (and all its sub-directories).  
+`pwd` : prints the *current* directory (i.e. the directory you are in).  
 
-`find . -type d`: searches for directories (`-type d`) inside the current directory (`.`) and lists them to the terminal.
+`cd` : takes you to your *home* directory.   
+    `cd /` : takes you to the *root* directory.  
+    `cd ..` : takes you to the *parent* directory of the *current* directory.  
+    `cd -` : takes you to the previous directory you were in.   
+    `cd dir1` : takes you from your *current* directory to the `dir1` directory.  
 
-`grep "<string>" <filename>`: searches for a string `<string>` in the file called `<filename>`and prints the results to the terminal.
+`ls` : lists the contents of the *current* directory.   
+    `ls -a` : lists all the files and directories including hidden ones.  
+    `ls -lSh` : lists all files and directories of the *current* directory, sorted by size with the size in human readable format (KB, MB, etc.).    
 
-`grep -r "<string>" <name_directory>`: searches for a string `<string>` in all files of the directory `<name_directory>`and prints the results to the terminal.
+`df -h` : prints disk usage to the terminal.  
 
-`unzip <name_zip>`: un-compresses the zip file called `<name_zip>` to the current directory.
+`du -sh` : prints size of the *current* directory.  
 
-`df -h`: prints disk usage to the terminal.
+`mkdir dir1` : make (create) directory called `dir1` (`dir1` can also include the path).   
 
-`du -sh`: prints size of the current directory.
+`touch file1` : creates an empty file in the *current* directory called `file1` (`file1` can also include the path).  
 
-`wget <url>`: downloads files from a url.
+`cat file1` : prints the contents of the (text) file called `file1` to the screen of the terminal (`file1` can also include the path).   
 
-`echo`: prints the string `<string>` to the terminal.
+`mv file1 dir1` : when first argument is a *file* and second argument is a *directory*, `mv` moves the *file* to that *directory*. You can provide the name of the file (if the file is in the *current* directory) or the path of the file (if the file is in another directory).  
 
-`export` : sets environment variables.
+`mv file1 file2` : when both arguments are *files*, `mv` renames the first file to the second file. Both `file1` and `file2` can also include the respective paths.   
 
-`history`: prints the history of commands.
+`cp file1 file2` : copies the file given as a first argument (`file1`) to the file given as the second argument (`file2`). Both `file1` and `file2` can also include the respective paths.   
+
+`cp -r dir1 dir2` : copies the contents of the directory given as a first argument (`dir1`) to the directory given as the second argument (`dir2`).  
+
+`rm file1` : deletes the file called `file1`. **Be aware this command deletes the file FOR-E-VER. So be careful!**
+
+`rm –r dir1` : deletes the directory called `dir1`. **Be aware this command deletes the directory FOR-E-VER. So be careful!**
+
+`find dir1 -type f -name "file1"` : searches for a file (`-type f`) called `file1` inside the directory `dir1` (and all its sub-directories). When using `-iname` instead of `-name`, the match is case insensitive.  
+
+`find . -type d` : searches for directories (`-type d`) inside the current directory (`.`) and lists them to the terminal.    
+
+`grep "str1" file1` : searches for a string `str1` in the file called `file1` and prints the results to the terminal.    
+
+`grep -r "str1" dir1` : searches for a string `str1` in all files of the directory `dir1`and prints the results to the terminal.   
+
+`unzip zip1` : un-compresses the zip file called `zip1` to the current directory.   
+
+`echo str1` : prints the string `str1` to the terminal.  
+
+`export var1` : sets the `var1` environment variable.  
+
+`history` : prints the history of commands stored in memory for the current shell session.  
 
 
 ## Requires extra installation
 
-download the executables (e.g. `rsync.exe`) from https://repo.msys2.org/msys/x86_64/. If more dll files are requested, download the OpenSSL package: https://repo.msys2.org/msys/x86_64/libopenssl-3.0.8-1-x86_64.pkg.tar.zst and copy the required DLLs into the same folder as the executables. 
+Download the executables first (e.g. `rsync.exe`) from [https://repo.msys2.org/msys/x86_64/](https://repo.msys2.org/msys/x86_64/). If more DLL files are required, download the OpenSSL package from [https://repo.msys2.org/msys/x86_64/libopenssl-3.0.8-1-x86_64.pkg.tar.zst](https://repo.msys2.org/msys/x86_64/libopenssl-3.0.8-1-x86_64.pkg.tar.zst) and copy the required DLLs into the same folder as the executables.   
 
-`zip -r <name_zip> <name_directory>`: compresses the contents of the directory `<name_directory>` into a zip file called `<name_zip>`.
+`zip -r zip1 dir1` : compresses the contents of the directory `dir1` into a zip file called `zip1`.   
 
-`tree <name_directory>`: prints the directory tree structure of the directory `<name_directory>` to the terminal (nice layout for the `README.md` of your repo!).
+`tree dir1` : prints the directory tree structure of the directory `dir1` to the terminal (nice layout for the `README.md` of your repo!).  
 
-`rsync`:  transfers and syncs files from different locations.
+`rsync -av dir1 dir2` :  transfers and syncs files from the location `dir1` to location `dir2`. Both locations can be local or over a network.  
+
+`wget url1` : downloads the files from the provided url `url1`.   
+
+________________________
+
+[Previous : 04 - Aliases](https://github.com/HeatherAn/recommended-coding-practices/blob/main/04-Aliases.md)  
+[Next     : 06 - Version control with Git](https://github.com/HeatherAn/recommended-coding-practices/blob/main/06-Version-Control-With-Git.md)  
+
+[Go back to README](https://github.com/HeatherAn/recommended-coding-practices#readme)
