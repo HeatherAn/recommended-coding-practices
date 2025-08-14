@@ -202,7 +202,7 @@ ___________________________________________________________
 
 The `find` command helps you find files or directories anywhere in your device. The `grep` command instead is used to find strings in files.  
 
-`find dir1 -type f -name "file1"` : searches for a file called `file1` inside the directory `dir1` (and all its sub-directories) and lists them in the terminal.    
+`find dir1 -type f -name "file1"` : searches for a file called `file1` inside the directory `dir1` (and all its sub-directories) and lists them in the terminal. For case insensitive match use `-iname` instead of `-name`.
 
 `find dir1 -type d` : searches for all directories (`-type d`) inside the directory `dir1` and lists them in the terminal.   
 
