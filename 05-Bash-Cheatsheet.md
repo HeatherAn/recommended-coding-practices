@@ -61,7 +61,9 @@ Wildcard `?` : this wildcard matches exactly one character.
 
 ## Requires extra installation
 
-Download the executables first (e.g. `rsync.exe`) from [https://repo.msys2.org/msys/x86_64/](https://repo.msys2.org/msys/x86_64/). If more DLL files are required, download the OpenSSL package from [https://repo.msys2.org/msys/x86_64/libopenssl-3.0.8-1-x86_64.pkg.tar.zst](https://repo.msys2.org/msys/x86_64/libopenssl-3.0.8-1-x86_64.pkg.tar.zst) and copy the required DLLs into the same folder as the executables.   
+The following commands require extra installation:
+    - Download the executables first (e.g. `rsync.exe`) from [https://repo.msys2.org/msys/x86_64/](https://repo.msys2.org/msys/x86_64/).  
+    - If more DLL files are required, download the OpenSSL package from [https://repo.msys2.org/msys/x86_64/libopenssl-3.0.8-1-x86_64.pkg.tar.zst](https://repo.msys2.org/msys/x86_64/libopenssl-3.0.8-1-x86_64.pkg.tar.zst) and copy the required DLLs into the same folder as the executables.   
 
 `zip -r zip1 dir1` : compresses the contents of the directory `dir1` into a zip file called `zip1`.   
 
