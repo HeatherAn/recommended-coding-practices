@@ -212,6 +212,28 @@ The `find` command helps you find files or directories anywhere in your device. 
 
 ___________________________________________________________  
 
+# To look through the history : `history` Command - BONUS piping!
+
+Sometimes it is useful to look through the history of commands within the *current* Shell session and/or previous Shell sessions.  
+
+When you open the terminal, you initiate a Shell session. You can look at all the commands you have typed so far by typing `history`. If for example you want to look for a given instruction you used at some point within the Shell session (e.g., when you copied a directory into another directory `cp -r`), you can *pipe* the `history` with the `grep` command:
+
+```
+history | grep 'cp -r'
+```
+
+The *pipe* '|' takes the output of the `history` command, and it gives it as input to the -in this case- the `grep` instruction, which will look at all the command lines that had 'cp -r' in it.  
+
+### Parenthesis: piping vs re-directing
+
+**Piping** ('|') takes the output of the instruction to the left of the '|' symbol, and it gives it as input to the instruction that is on the right of the '|' symbol. 
+
+Not to be confused with **re-directing** which uses the '>' and '<' symbols for output re-direction and input re-direction, respectively. 
+    The **output re-direction '>'** is what we have seen before (see `echo` command example), when the output of the instructions to the left of the '>' symbol is re-directed to a file (which is specified to the right of the '>' symbol).   
+    The **input re-direction '<'** gives the contents of the file specified to the right of the '<' symbol, as input to the instruction specified to the left of the '<' symbol.  
+    
+___________________________________________________________  
+
 Aside using commands to navigate and manage files and directories, you can also **create Bash scripts** (with `.sh` extension) and execute them by doing `bash name_script.sh`, where `name_script.sh` is the name of the script (include the path to it, if it is not in the *current* working directory). Doing this will allow you to automatize workflows (creation of files, backups, renaming of files, running python scripts at a given order, etc.) all by running a single script!
 
 Interested to practice exercises about Bash? Visit the [Software Carpentry lesson!](http://swcarpentry.github.io/shell-novice/) 
