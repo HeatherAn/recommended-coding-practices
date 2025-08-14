@@ -17,30 +17,31 @@ Practice and enjoy!
 
 ## Contents
 
-- [Unix Shell commands](https://github.com/HeatherAn/recommended-coding-practices/blob/main/01-Unix-Shell-Commands.md)
-- [Bash Cheatsheet](https://github.com/HeatherAn/recommended-coding-practices/blob/main/04-Bash-Cheatsheet.md)
-- [Environment variables](https://github.com/HeatherAn/recommended-coding-practices/blob/main/03-Environment-Variables.md) 
-- [Version control with Git](https://github.com/HeatherAn/recommended-coding-practices/blob/main/05-Version-Control-with-Git.md)  
-- [Git Cheatsheet](https://github.com/HeatherAn/recommended-coding-practices/blob/main/12-Git-Cheatsheet.md)
-- [Project structure](https://github.com/HeatherAn/recommended-coding-practices/blob/main/13-Project-Structure.md)
-- [Coding conventions](https://github.com/HeatherAn/recommended-coding-practices/blob/main/14-Coding-Conventions.md)  
+In this repository you will find the following material to follow as a self-learner:
+- [Unix Shell commands](https://github.com/HeatherAn/recommended-coding-practices/blob/main/01-Unix-Shell-Commands.md)  
+- [Environment variables](https://github.com/HeatherAn/recommended-coding-practices/blob/main/03-Environment-Variables.md)   
+- [Version control with Git](https://github.com/HeatherAn/recommended-coding-practices/blob/main/06-Version-Control-with-Git.md)  
+- [Project structure recommendations](https://github.com/HeatherAn/recommended-coding-practices/blob/main/14-Project-Structure.md)
+- [Coding conventions](https://github.com/HeatherAn/recommended-coding-practices/blob/main/15-Coding-Conventions.md)  
 - Make command
-- Guidelines on what to do once you [**finish a project**](https://github.com/HeatherAn/recommended-coding-practices/blob/main/21-Publish-Or-Archive.md)  
-- Guideline on **how to contribute to the Wiki**
-- [README templates](https://github.com/HeatherAn/recommended-coding-practices/tree/main/templates) for data, code and machine-learning projects.  
-    * The README for data (`README_data.txt`) is in txt format. Fill it in according to what is asked in commented text (in between `<!---` and `-->`). Then rename the file to README.txt.   
-    * The README for code (`README_code.md`) and machine-learning projects (`README_ML.md`) are written in Markdown. Use the `Code` tab instead of the `Preview` tab to see the commented text. Fill in the template according to what is asked in commented text (in between `<!---` and `-->`). Then rename the file to README.md.    
+- Guidelines on what to do once you [finish a project](https://github.com/HeatherAn/recommended-coding-practices/blob/main/22-Publish-Or-Archive.md)  
 
+If you are already familiar with some of the material, you can go directly to the **cheatsheets** and the **templates**:  
+- [Bash Cheatsheet](https://github.com/HeatherAn/recommended-coding-practices/blob/main/05-Bash-Cheatsheet.md)  
+- [Git Cheatsheet](https://github.com/HeatherAn/recommended-coding-practices/blob/main/13-Git-Cheatsheet.md)  
+- [README templates](https://github.com/HeatherAn/recommended-coding-practices/tree/main/templates) for data, code and machine-learning projects.  
+    * The README for a data repository (`README_data.txt`) is in `.txt` format. Fill it in according to what is asked in commented text (in between `<!---` and `-->`). Then rename the file as `README.txt` and put it at the top-level of the `data/` directory.      
+    * The README for a code repository (`README_code.md`) and machine-learning projects (`README_ML.md`) are written in Markdown. Use the `Code` tab instead of the `Preview` tab to see the commented text. Fill in the template according to what is asked in commented text (in between `<!---` and `-->`). Then rename the file as `README.md` and keep it at the top-level of the project repository.    
 
 
 ## How to follow the material?
 
-The material is presented in separate **Markdown** files. In order to go through the material, please **follow the numerical order** of the names of the files. At the end of each page you will also find the **Previous** and **Next** links that will take you through the material in sequential order.
+The material is presented in separate **Markdown** files. In order to go through the material, **follow the numerical order** of the names of the files. At the end of each page you will also find the **Previous** and **Next** links that will take you through the material in sequential order.
 
 
 ## References
 
-The material has been built upon from the content provided by open sources such as the [Software Carpentry](https://software-carpentry.org/) and [Code Refinery](https://coderefinery.org/) initiatives.
+The material has been mainly built upon the content provided by open sources such as the [Software Carpentry](https://software-carpentry.org/) and [Code Refinery](https://coderefinery.org/) initiatives.
 
 _________________________
 
