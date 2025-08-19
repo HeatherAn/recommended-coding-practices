@@ -34,7 +34,7 @@ git remote add origin git@github.com:<your_Github_username>/Project_Y.git
 ```
 This tells Git which is the *remote* repository that will be referred to as **origin**, and that will be "linked" to the *local* repository at `~/Documents/Project_Z`. 
 
-**Keep in mind**: here we have used different names for the *local* and *remote* repositories for training purposes. In general, and specially when starting to use Git and Github, use the same name for both.
+**Keep in mind**: here we have used different names for the *local* and *remote* repositories for training purposes. In general, and especially when starting to use Git and Github, use the same name for both.
 
 __________________________
 
@@ -42,7 +42,7 @@ __________________________
 
 - If you want to make sure you have the right **origin**, you can check the defined remotes by typing `git remote –v`.  
 
-- Keep in mind **origin** is the alias with which your device refers to the *remote* Github repository for that *local* repository. In principle, you can change this alias, but you are advised not to (especially when learning how to use Git). During this Wiki we will stick to the **origin** and **main** aliases only.  
+- Keep in mind **origin** is the alias with which your "local Git" refers to the *remote* Github repository for that *local* repository. In principle, you can change this alias, but you are advised not to (especially when learning how to use Git). During this Wiki we will stick to the **origin** and **main** aliases only.  
 
 __________________________
 
@@ -50,7 +50,7 @@ __________________________
 
 Now you can start working on the files of your *local* **main** branch (which is the only branch you have so far), *pulling*/*pushing* from/to the *remote* repository.  
 
-**Recommendation:** do the version control of one file at a time.
+**Recommendation:** do the version control of one file at a time, and one (relevant) change at a time.
 
 When you work on files inside the directory where Git has been initialized, you have to tell Git *"hey, keep track of what I am doing to this file"* and *"hey, record the changes made to this file and add this metadata to those changes"*. The first thing is calling **adding** files to Git, and the second thing is making a **commit** of the changes made to the file.  
  
@@ -61,25 +61,23 @@ git add file1
 ``` 
 This will tell Git to basically "follow" the changes made to this file and put it in the so-called **staging area**.   
 
-Let’s say you created a function on `file1`. This change is worth saving as a whole, so that you can always go back to it if needed. In order to *save* it, you have to **commit** it. To do this type:
+Let’s say you created a function on `file1`. This change is worth saving as a whole, so that you can always go back to it if needed. In order to *save* it, you have to **commit** it. To do this, type:
 
 ```
 git commit -m “text_commit1”
 ```
-This will tell Git to **record such a change** with the **descriptive metadata** `“text_commit1”`. Replace `“text_commit1”` with a short description of the change made to the file. For example: `git commit –m “Added sum function”`. If you only type `git commit`, the editor you set by default (when installing Git) will open so that you can write the **descriptive metadata** `“text_commit1”`. But always try to keep `“text_commit1”` as short as possible. See the following [blog](https://chris.beams.io/posts/git-commit/) where you can find principles on how to write Git commit messages. Try to set up conventions on how to write them right from the start. It will pay off in the long-term!
+Where you need to replace `“text_commit1”` with a short description of the change made to the file. For example: `git commit –m “Added sum function”`. This will tell Git to **record such a change** with that **descriptive metadata**.   
+
+If you only type `git commit`, the editor you set by default (when installing/configuring Git) will open so that you can write the **descriptive metadata** `“text_commit1”` in it. But always try to keep `“text_commit1”` as short as possible. See the following [blog](https://chris.beams.io/posts/git-commit/) where you can find principles on how to write Git commit messages. Try to set up conventions on how to write them right from the start. It will pay off in the long-term!
 
 ### Difference between adding and committing
 
-*Adding* and *committing* might be a bit confusing at first. Think as if you were preparing the clothes you will take for a trip. You first put the clothes on your bed to have an overview of what you will be taking to the trip. In this case, the act of *putting the clothes on the bed* would be `git add`; and the *bed* itself would the so-called `staging area`. 
+*Adding* and *committing* might be a bit confusing at first. Think of them as if you were preparing the clothes for a trip. You first put the clothes on your bed to have an overview of what you will be taking to the trip. In this case, the act of *putting the clothes on the bed* would be `git add`; and the *bed* itself would the so-called `staging area`. 
 
 Once you have *finally decided what to take* for your trip, you *put the clothes on the suitcase*. In this case, *putting the clothes on the suitcase* would be like doing a `git commit`.
 ___________________________________
 
-While working on a file, between **adding** and **committing**, you might also find useful the following commands:
-
-`git add --all` : to add all changes made to all files to the **staging area**. For example: 
-   - you fixed typos in `file1` and `file2`, all within the same *(local)* repository. 
-   - Then you do `git add --all` and `git commit –m “Fixed typos in file1 and file2”`  
+While working on a file, between **adding** and **committing**, you might also find useful the following commands:   
 
 `git status` : this will show you the *tracked* and *untracked* files. The “untracked” file(s) message means that there is(are) file(s) in the directory that Git is **not officially keeping track of**.  
    - If you want Git to *officially* track them, then you should **add** the files using `git add file_name`.  
@@ -105,17 +103,24 @@ While working on a file, between **adding** and **committing**, you might also f
 
 Every time you make **small changes** to a file, use `git add file1` (where `file1` is the name of the file you have been working in). 
 
-Every time you **finalize an important task**, do a **commit**. Remember **commits** have **descriptive metadata** attached to them (the log messages, who made the commit and when). Hence, try to commit significant changes and use **descriptive metadata** that will allow your future self (and that of your colleagues) to understand in a few words what change you did in that **commit**. 
+Every time you **finalize an important task**, do a **commit**. Remember **commits** have **descriptive metadata** attached to them (the log messages, who made the commit and when). Hence, try to commit significant changes and use **descriptive metadata** that will allow your future self (and that of your colleagues) to understand in a few words what change you did in that **commit**.    
 
-## What about *pushing* to the *remote*?
+## How can I undo an *adding* or a *commit*?
+ 
+The following diagram shows the commands to undo the *adding* and the *committing*.  
 
-It depends. If you are working by yourself then every time you **take a break** or **by the end of your working day**, **push all commits** to the respective *online* Gtihub repository (this will "sync" the *online remote* repository with your *local* repository). But if you are collaborating with others on the same *remote* repository, you need to **push** more often. 
+![undo_diagram](uploads/undo_diagram.png)
 
-### How to push?
+Keep in mind:  
+- `git restore <file>` : when used without any options, it discards the changes made to the file called `<file>`.   
+   - When the `--staged` option is used, it un-stages the changes (but changes are not discarded).   
+- `git rm --cached <file>` :  it un-stages the changes made to the file `<file>` when the file has been staged for the first time.   
+- `git reset <commit_id>` : un-does a commit:   
+   - `git reset --soft <commit_id>` : un-does the commit `<commit_id>` but keeps the changes to the file staged.   
+   - `git reset --mixed <commit_id>` : un-does the commit `<commit_id>` and un-stages the changes (but changes are not discarded).   
+   - `git reset --hard <commit_id>` : un-does the commit `<commit_id>`, un-stages the changes and discards the changes.  
 
-Type the following in Bash (in the directory where the *local* repository is):
-
-`git push origin main` : to **push** the changes made from your current branch (the *local* **main**) to the *remote* **main** branch. Once you have done this, you should be able to see the changes you made *locally* in the remote Github repository. Try it out!
+**Recommendation**: especially when starting to use Git, always do a `git status` after every Git command and read its output. It will always tell you what command instructions you can use to undo the latest Git command used. 
 
 
 ________________________
