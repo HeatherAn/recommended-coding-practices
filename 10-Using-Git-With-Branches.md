@@ -10,22 +10,24 @@ Now, branches are useful not only when you are working on a code by yourself, bu
 
 You can create as many branches as you need to, starting from whichever commit from whichever branch!  
 
-To create a new *local* branch, go to the directory where the *local* **main** branch is (i.e., where Git has been initialized with `git init`) and type:  
+To create a new *local* branch, go to the directory where the *local main* branch is (i.e., where Git has been initialized with `git init`) and type:  
 
 ```
 git switch -c name_branch
 ```
-Where `name_branch` is the name of the new *local* branch to be created. This will create a new branch called **name_branch** starting from your **main** *local* branch and starting from the `HEAD` commit, and it will switch to that branch right away. When being in the `name_branch`, you will see the same files as in the **main** branch. But all changes made while being on the `name_branch` will "stay" there, and they will be independent from the changes made to the same files in the *local* **main** branch.  
+Where `name_branch` is the name of the new *local* branch to be created. This will create a new branch called `name_branch` starting from your *local main* branch and starting from the `HEAD` commit, and it will switch to that branch right away. When being in the `name_branch`, you will see the same files as in the *local main* branch. But all changes made while being on the `name_branch` will "stay" there, and they will be independent from the changes made to the same files in the *local main* branch.  
 
 If you want to create a branch from your *local main* but from how the *local main* was -for example- two commits ago, you have to speficy the commit *hash* as `git switch -c name_branch commit_id` (or use `HEAD~2` as `commit_id`).   
 
-## Switching between branches
+## How to know in which branch I am?
 
-To know in which branch you are currently working in you can do `git branch`. The output will be a list of all *local* branches related to that repository. The one next to the asterisk `*` is the one you are currently in. 
+In Git Bash you will see the name of the branch before the prompt symbol ($). But you can also use the `git branch` command. This will output a list of all *local* branches related to the repository you are in. The branch next to the asterisk `*` is the one you are currently in. 
 
 If you use the `--all` option (so `git branch --all`) you will see a list of all *local* and *remote* branches. Again, the branch next to the asterisk `*` is the one you are currently in. 
 
-To **switch from the current branch to another** we saw before you can use `git switch name_branch`, where `name_branch` is the name of the branch you want to move into. This instruction actually works for Git versions later than 2.23. You can also switch from the current branch to another one called `name_branch` by doing `git checkout name_branch`. Does `git checkout` sound familiar? Yes! We have already used it to restore a specific version of a file before in [Using Git For The Nth Time](https://github.com/HeatherAn/recommended-coding-practices/blob/main/09-Using-Git-For-The-Nth-Time.md). The `checkout` command is a very versatile one! See more by looking at the manual with `git checkout --help`.
+## How to switch between branches?
+
+To switch from the current branch to another you can use `git switch name_branch`, where `name_branch` is the name of the branch you want to move into. This instruction works for Git versions later than 2.23. For older versions you can also switch from the current branch to another one called `name_branch` by doing `git checkout name_branch`. Does `git checkout` sound familiar? Yes! We have already used it to restore a specific version of a file before in [Using Git For The Nth Time](https://github.com/HeatherAn/recommended-coding-practices/blob/main/09-Using-Git-For-The-Nth-Time.md). The `checkout` command is a very versatile one! See more by looking at the manual with `git checkout --help`.
 
 ____________________
 
@@ -38,9 +40,8 @@ ____________________
 
 You can delete *local* and *remote* branches by adding the `-d` flag:  
 
-- `git branch -d name_branch` : to delete a *local* branch called `name_branch`.
-
-- `git branch -rd name_branch` : to delete a *remote* branch called `name_branch`. Keep in mind this will only remove the pointer to the remote branch `name_branch` (so you will not see it anymore when doing `git branch --all` for example). But the remote branch will still exist in Github. If you want to delete the remote branch in Github then you can do: `git push origin --delete name_branch`  
+- `git branch -d name_branch` : to delete a *local* branch called `name_branch`.  
+- `git branch -rd name_branch` : to delete a *remote* branch called `name_branch`. Keep in mind this will only remove the pointer to the remote branch `name_branch` (so you will not see it anymore when doing `git branch --all` for example). But the remote branch will still exist in Github. If you want to delete the remote branch in Github then you can do: `git push origin --delete name_branch`   
 
 To know all *remote* branches you are tracking, use `git branch -r` (the `-r` flag refers to "remote").  
 
@@ -53,9 +54,9 @@ _________________
 
 ## Common branch aliases
 
-- When working on a code by **yourself**, aside the *local main* and the **origin** (actually **origin/main** branch as seen when doing `git branch --all`), you can create other branches for specific tasks related to the development of the code. When creating new branches, choose short names, such as **testing** (to perform the testing of code), **issue_X** (with **X** being the number of a specific issue), etc.  
+- When working on a code by **yourself**, aside the *local main* and the origin *remote main* branch (actually `origin/main` branch as seen when doing `git branch --all`), you can create other branches for specific tasks related to the development of the code. When creating new branches, choose short names, such as **testing** (to perform the testing of code), **issue_X** (with **X** being the number of a specific issue), etc.  
 
-- When working in **collaboration** with others, there will be a main repository (usually referred to as the **upstream** *remote* Github repository). And each collaborator will have its own "copy" of this main repository *locally* (the **main** branch in each collaborator's *local* directory where Git has been initialized). Each collaborator can create other branches *locally* and *remotely*; and some of those branches can even be accessed by more than one collaborator (in case they work together on a specific task). The team should make a proper design of what branches will be created as a team, what branches will be worked on individually, and even define responsibilities to which team member will be accepting merges between branches.
+- When working in **collaboration** with others, there will be a main repository (usually referred to as the **upstream** *remote* Github repository). And each collaborator will have its own "copy" of this main repository *locally* (the *main* branch in each collaborator's *local* directory where Git has been initialized). Each collaborator can create other branches *locally* and *remotely*; and some of those branches can even be accessed by more than one collaborator (in case they work together on a specific task). The team should make a proper design of what branches will be created as a team, what branches will be worked on individually, when branches will be merged to the **upstream** *remote* -usually the *remote main*- branch, and even define responsibilities as to which team member will be reviewing and accepting merges between branches.
 
 ________________ 
 
@@ -75,6 +76,7 @@ When having more branches you can explicitly tell Git what you want to push/pull
 
 `git push origin main:name_branch` : pushes the changes from your local `main` to the **origin** remote `name_branch`. Same for `git pull`.  
 
+Having said that, by default Git understands that `git push origin main` is `git push origin main:main`.  
 ______________________
 
 [Previous : 09 - Using Git For the Nth Time](https://github.com/HeatherAn/recommended-coding-practices/blob/main/09-Using-Git-For-The-Nth-Time.md)  
