@@ -111,6 +111,12 @@ Every time you make **small changes** to a file, use `git add file1` (where `fil
 
 Every time you **finalize an important task**, do a **commit**. Remember **commits** have **descriptive metadata** attached to them (the log messages, who made the commit and when). Hence, try to commit significant changes and use **descriptive metadata** that will allow your future self (and that of your colleagues) to understand in a few words what change you did in that **commit**.    
 
+### How to refer to a given commit?
+
+You can refer to a given **commit** by its *unique identifier* (*hash*) or in terms of the `HEAD` variable. `HEAD` is actually a pointer that refers to the *most recent commit of the current branch*. Thus, if you want to refer to the commit before the current one, you can use: `HEAD~1`. If you want to refer to two commits before the current one, then you can use `HEAD~2`, and so on. 
+
+Do you want to see more about how to refer to commits without writing the *hash* but using `HEAD` instead? It can get a bit confusing! But our dear friend [Stack Overflow](https://stackoverflow.com/) has quite a few discussions on it like [this one](https://stackoverflow.com/questions/2221658/whats-the-difference-between-head-and-head-in-git). 
+
 ### How can I undo an *adding* or a *commit*?
  
 The following diagram shows the commands to undo the *adding* and the *committing*.  
