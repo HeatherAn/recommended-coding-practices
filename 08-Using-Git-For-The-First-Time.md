@@ -99,13 +99,13 @@ While working on a file, between **adding** and **committing**, you might also f
 
 `git diff --staged` : shows the changes you have done *locally* (compared to the last version that was **committed**) and that you have **added** to the *staging area*.
 
-## Rule of thumb: when to *add* and when to *commit*?
+### Rule of thumb: when to *add* and when to *commit*?
 
 Every time you make **small changes** to a file, use `git add file1` (where `file1` is the name of the file you have been working in). 
 
 Every time you **finalize an important task**, do a **commit**. Remember **commits** have **descriptive metadata** attached to them (the log messages, who made the commit and when). Hence, try to commit significant changes and use **descriptive metadata** that will allow your future self (and that of your colleagues) to understand in a few words what change you did in that **commit**.    
 
-## How can I undo an *adding* or a *commit*?
+### How can I undo an *adding* or a *commit*?
  
 The following diagram shows the commands to undo the *adding* and the *committing*.  
 
@@ -121,6 +121,31 @@ Keep in mind:
    - `git reset --hard <commit_id>` : un-does the commit `<commit_id>`, un-stages the changes and discards the changes.  
 
 **Recommendation**: especially when starting to use Git, always do a `git status` after every Git command and read its output. It will always tell you what command instructions you can use to undo the latest Git command used. 
+
+## Push to the remote
+
+Start editing your files, *adding* them to the staging area, and *committing* the relevant changes so that you have them in the history of the repository. After making a commit, **push** the commit done in your *local main* branch to the remote *main* branch so that they are synced: 
+
+```
+git push origin main
+```
+In fact, with `git push` you can "send" the changes done in any *local* branch to any *remote* branch (see more in [Using Git With Branches](https://github.com/HeatherAn/recommended-coding-practices/blob/main/10-Using-Git-With-Branches.md) section).  
+
+If you happen to make commits to the *remote main* directly via Github's user interface (or if you are collaborating with others and they push their local changes to the *remote main*, then you will need to **pull** those changes first, before making any changes *locally*. This you do with:  
+
+```
+git pull origin main
+```
+
+## When should I *push/pull* to/from the *remote*?
+
+It depends:  
+- If you are working by yourself, then every time you **take a break** or **by the end of your working day**, **push all commits** to the respective *online* Github repository.    
+- If you are collaborating with others on the same *remote* repository, you need to **push** (and **pull**) more often.   
+
+**As a rule of thumb**:  
+- **pull** before starting to work *locally*;  
+- **push** after every *local* commit.    
 
 
 ________________________
