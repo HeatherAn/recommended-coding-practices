@@ -99,6 +99,12 @@ While working on a file, between **adding** and **committing**, you might also f
 
 `git diff --staged` : shows the changes you have done *locally* (compared to the last version that was **committed**) and that you have **added** to the *staging area*.
 
+`git log` : shows the project’s history. It will show the *unique identifier* (aka the *hash*) of each **commit** related to that repository (the very large string next to "commit"), the *author* (who made each `commit`), the *date* (when each `commit` was made) and the *metadata* of the commit (the message defining what the change is about). Use the `q` to exit the view of the log.  
+
+`git log -N` : shows the last `N` commits.  
+
+`git log --oneline` : shows a summarized version of `git log`. You can also add the `-N` option to see only the latest one-line logs.  
+
 ### Rule of thumb: when to *add* and when to *commit*?
 
 Every time you make **small changes** to a file, use `git add file1` (where `file1` is the name of the file you have been working in). 
