@@ -50,15 +50,60 @@ In this case you can do a `git rebase` to apply the commits made in the *local m
 git rebase main
 git log --oneline
 ```
-With `git rebase` you will see that the commit made in the *local main* has been "applied" in the `feature_1` branch. When doing `git log --oneline` it looks as if you had made the changes in the `feature 1` branch all along. Be aware the commit hashes of the commits made in `feature_1` have changed: **rebase changes commits hashes**. 
+With `git rebase` you will see that the commit made in the *local main* has been "applied" in the `feature_1` branch. When doing `git log --oneline` it looks as if you had made the changes in the `feature 1` branch all along. Be aware the commit hashes of the commits made in `feature_1` have changed: **rebase changes the commits hashes**. 
 
 ____________________________
 
 ### Parenthesis
 
-In the example of **Merging (without conflicts)**, doing `git rebase feature_1` instead of `git merge feature_1` results in the same history because the commits of `feature_1` do not change their hashes, and there were no new commits in the *local main*.   
+In the example of **Merging (without conflicts)**, doing `git rebase feature_1` instead of `git merge feature_1` results in the same history because the hashes of the commits of `feature_1` do not change, and there were no new commits in the *local main*.   
 ____________________________
 
-## Merging with conflicts
+## Merging or rebasing with conflicts
 
-Let us say 
+Let us say that while working on the new feature in `feature_1` you change the same file in the *local main*. This will create a **conflict** when trying to *merge* or *rebase* the branches.
+
+**Conflicts** arise when:  
+- you modify the same file in the same lines in different branches, or   
+- when you delete a file in one branch but not in the other one. 
+
+Let us exemplify a conflict with a *merge*, modifying the same file `script1.py` in the same line (line 1) in both branches (the *local main* and  `feature_1`): 
+
+```
+# edit script1.py in line 1
+git add script1.py
+git commit -m "Edit script1.py"
+git log --oneline
+git checkout feature_1
+# edit script1.py in line 1
+git add script1.py
+git commit -m "Edit script1.py"
+git checkout main
+git merge feature_1
+```
+
+When doing `git merge feature_1` the following conflict message will show up in the terminal: 
+
+```
+Auto-merging script1.py
+CONFLICT (content): Merge conflict in script1.py
+Automatic merge failed; fix conflicts and then commit the result
+```
+
+Now you have to open the `script1.py`. You will see the conflicting lines enclosed between `<<<<<<< HEAD` and `>>>>>>> feature_1` strings,  separated by a `=======` string. Erase those strings and edit the file to save the change you want to keep:
+
+```
+# edit script1.py to solve the conflict
+git add script1.py
+git commit -m "Merge branch feature_1"
+git log --oneline
+```
+
+The conflict is solved, and the merge is closed with a commit. You can now choose whether to keep the `feature_1` branch or delete it (with `git branch -d feature_1`).  
+
+______________________
+
+[Previous : 10 - Using Git With Branches](https://github.com/HeatherAn/recommended-coding-practices/blob/main/10-Using-Git-With-Branches.md)  
+[Next : 12 - Cloning and Forking](https://github.com/HeatherAn/recommended-coding-practices/blob/main/12-Cloning-and-Forking.md)  
+
+[Go back to README](https://github.com/HeatherAn/recommended-coding-practices#readme)
