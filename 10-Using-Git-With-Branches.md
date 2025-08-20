@@ -65,9 +65,8 @@ ________________
 When having more branches than a *local main* and a *remote main*, keep in mind the following commands:  
 
 - `git remote add name_remote ssh_key` : to add a new remote called `name_remote` with the url `ssh_key`. This is how we have defined the **origin** before (see [Using Git For The First Time](https://github.com/HeatherAn/recommended-coding-practices/blob/main/08-Using-Git-For-The-First-Time.md)). You can use such instruction to define other *remote* repositories. For example, an **upstream** *remote* repo.  
-- `git remote remove name_remote` : very useful command to remove the "link" to an already defined *remote*.  
-- `git remote set-url name_remote new_ssh_key` :  in case a *remote* has been moved, you can change the url of the remote with alias `name_remote`, by specifying the new url of the *remote* repository in `new_ssh_key`.  
-- `git remote rename old_name new_name`: changes the alias of the *remote* from the `old_name` to a `new_name`.  
+- `git remote remove name_remote` : very useful command to remove the "link" to an already defined *remote*.   
+- `git remote rename old_name new_name`: changes the alias of the *remote* from the `old_name` to a `new_name`.    
 _________________
 
 ## Pushing and Pulling
@@ -76,7 +75,7 @@ When having more branches you can explicitly tell Git what you want to push/pull
 
 `git push origin main:name_branch` : pushes the changes from your local `main` to the **origin** remote `name_branch`. Same for `git pull`.  
 
-Having said that, by default Git understands that `git push origin main` is `git push origin main:main`.  
+Having said that, by default Git understands that `git push origin main` is `git push origin main:main`. Same for `git pull`.   
 ______________________
 
 [Previous : 09 - Using Git For the Nth Time](https://github.com/HeatherAn/recommended-coding-practices/blob/main/09-Using-Git-For-The-Nth-Time.md)  
