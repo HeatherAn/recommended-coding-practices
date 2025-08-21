@@ -4,7 +4,7 @@ So far we have used the word *"project"* to refer to a Git/Github *"repository"*
 
 ## General Structure
 
-In order for your project to be easily understood by your **future self and others** (your supervisor, your collaborators), the project must have a **proper directory structure**.  
+In order for your project to be easily understood by your **future self and others**, the project must have a **proper directory structure**.  
 
 As a rule-of-thumb a proper directory structure should have as a minimum the following content:  
 
@@ -22,9 +22,9 @@ Image by [Peggy und Marco Lachmann-Anke](https://pixabay.com/users/peggy_marco-1
 
 ## README
 
-In every project there should be at least a **top-level README** file in a simple text format (e.g., `.txt` or `.md`).  
+In every project there should be at least a **top-level README** file in a simple text format (e.g., `.txt` or `.md`). This means, a `README` file at the top of the directory structure of the project. 
 
-Generally speaking, the README file is where you will be **documenting**: 
+Generally speaking, the `README` file is where you must **document**: 
 
 - what the code does  
 
@@ -36,27 +36,27 @@ Generally speaking, the README file is where you will be **documenting**:
 
 - references and acknowledgements (this could also be in a separate directory within the repository)
 
-The README in a repository should be **understandable** not only by you (and your future self!), but also by others (especially if the repository becomes public or it is open for others within the group to collaborate in). 
+The `README` in a repository should be **understandable** not only by you (and your future self!), but also by others (especially if the repository becomes public or if it will be re-used/further-developed within your work group).   
 
-**Recommendation:** do not write the README at the very last minute. But **keep it alive** during the development of the project. And by the end of the project ask a colleague for **feedback** on it.
+**Recommendation:** do not write the `README` at the very last minute. But **keep it alive** during the development of the project. And by the end of the project ask a colleague for **feedback** on it.  
+
+_________________________________
 
 ### Do you need a README template?
 
-You can find README templates for data, code and machine-learning projects [here](https://github.com/HeatherAn/recommended-coding-practices/tree/main/templates). Notice that:  
-   - The README for a data repository (`README_data.txt`) is in `.txt` format. Fill it in according to what is asked in commented text (in between `<!---` and `-->`). Then rename the file as `README.txt` and put it at the top-level of the `data/` directory.      
-   - The README for a code repository (`README_code.md`) and machine-learning projects (`README_ML.md`) are written in Markdown. Use the `Code` tab instead of the `Preview` tab to see the commented text. Fill in the template according to what is asked in commented text (in between `<!---` and `-->`). Then rename the file as `README.md` and keep it at the top-level of the project repository. 
+You can find `README` templates for data, code and machine-learning projects [here](https://github.com/HeatherAn/recommended-coding-practices/tree/main/templates). Notice that:  
+   - The `README` for a data repository (`README_data.txt`) is in `.txt` format. Fill it in according to what is asked in commented text (in between `<!---` and `-->`). Then rename the file as `README.txt` and put it at the top-level of the `data/` directory.      
+   - The `README` for a code repository (`README_code.md`) and machine-learning projects (`README_ML.md`) are written in [**Markdown**](https://www.markdownguide.org/) language. This language uses a rather simple syntax that can be read by any text editor, and becomes prettier when interpreted by browsers. Use the `Code` tab instead of the `Preview` tab to see the commented text. Fill in the template according to what is asked in commented text (in between `<!---` and `-->`). Then rename the file as `README.md` and keep it at the top-level of the project directory tree-structure.    
 
 _________________________________
+
 ### Parenthesis
 
-By now you have probably noticed that Github has the option to initialize the repository with a **README**. We have recommended not to tick that option for educational purposes only (to explain how to `clone` a *remote* repository, and `push` a *local* repository to the *remote*). However, of course having a **README** file is *essential* when having a Git/Github repository. If you tick the option, you will notice that a `README.md` file is created, which you can easily visualize in Github. The `md` extension refers to [**Markdown**](https://www.markdownguide.org/) language. In fact this **Wiki** is also written in **Markdown** language. This language uses a rather simple sintax that can be read by any text editor, and becomes prettier when interpreted by browsers. 
-
-Interested in more about **Markdown**? Check the syntax [here](https://www.markdownguide.org/basic-syntax/). 
+By now you have probably noticed that Github has the option to initialize the repository with a `README`. We have recommended not to tick that option for educational purposes only (e.g., to explain how to `push` a *local* repository to the *remote*). However, of course having a **README** file is *essential* when having a Git/Github repository. If you tick the option, you will notice that a `README.md` file is created, which you can easily visualize in Github. The `md` extension refers to [**Markdown**](https://www.markdownguide.org/) language. Interested in more about **Markdown**? Check the syntax [here](https://www.markdownguide.org/basic-syntax/). 
 
 Do you want to practice a bit more on it? Check out this [StackEdit app](https://stackedit.io/app#).
 
 __________________________________
-
 
 ![follow-5523784_1920](uploads/2ec51152ef31f13d7f9caf9411afc392/follow-5523784_1920.jpg)
 
@@ -64,7 +64,7 @@ Image by [Peggy und Marco Lachmann-Anke](https://pixabay.com/users/peggy_marco-1
 
 ## LICENSE
 
-When creating the repository it is always advisable to have either a **LICENSE** file (in `.txt` or `.md` format), or a directory called LICENSE where the future license file will be. A license **sets the terms** in which the code can be **re-used by others**. There are highly restrictive licenses (for commercialization of code for example) and there are less restrictive ones, such as the **open-source licenses**. The open-source licenses essentially say "use this at your own risk, but give me the proper attribution when using it". We will cover a bit of licenses in the [Publish Or Archive](https://github.com/HeatherAn/recommended-coding-practices/blob/main/17-Publish-Or-Archive.md) section.
+When creating the repository it is always advisable to have either a **LICENSE** file (in `.txt` or `.md` format), or a directory called LICENSE where the future license(s) file(s) will be. A license **sets the terms** in which the code can be **re-used by others**. There are highly restrictive licenses (for commercialization of code for example) and there are less restrictive ones, such as the **open-source licenses**. The open-source licenses essentially say "use this at your own risk, but give me the proper attribution when using it". We will cover a bit of licenses in the [Publish Or Archive](https://github.com/HeatherAn/recommended-coding-practices/blob/main/17-Publish-Or-Archive.md) section.
 
 **Recommendation:** even if you do not know whether the project is going to be **published** (for everyone to reuse) or **archived** (for only a specific group to reuse), it is always good to create the LICENSE either as an empty file or as an empty directory. Having it in your repository during the development of the project will serve as a **reminder** that you have to choose a LICENSE when finishing the project. So that others know how to reuse the code.
 
