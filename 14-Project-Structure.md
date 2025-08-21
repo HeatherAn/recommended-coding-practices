@@ -40,6 +40,12 @@ The README in a repository should be **understandable** not only by you (and you
 
 **Recommendation:** do not write the README at the very last minute. But **keep it alive** during the development of the project. And by the end of the project ask a colleague for **feedback** on it.
 
+### Do you need a README template?
+
+You can find README templates for data, code and machine-learning projects [here](https://github.com/HeatherAn/recommended-coding-practices/tree/main/templates). Notice that:  
+   - The README for a data repository (`README_data.txt`) is in `.txt` format. Fill it in according to what is asked in commented text (in between `<!---` and `-->`). Then rename the file as `README.txt` and put it at the top-level of the `data/` directory.      
+   - The README for a code repository (`README_code.md`) and machine-learning projects (`README_ML.md`) are written in Markdown. Use the `Code` tab instead of the `Preview` tab to see the commented text. Fill in the template according to what is asked in commented text (in between `<!---` and `-->`). Then rename the file as `README.md` and keep it at the top-level of the project repository. 
+
 _________________________________
 ### Parenthesis
 
