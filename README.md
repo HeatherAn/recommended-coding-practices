@@ -2,28 +2,30 @@
 
 We are not professional coders, but we all must code to **survive!** 
 
-![code-1084923_1280](uploads/857a7670be55fd972ab8b9b91a40b973/code-1084923_1280.png)
+![fig_code-screen](figures/fig_code-screen.png)
 
 Image by [Johnson Martin](https://pixabay.com/users/johnsonmartin-724525/?utm_source=link-attribution&amp;utm_medium=referral&amp;utm_campaign=image&amp;utm_content=1084923") from [Pixabay](https://pixabay.com/?utm_source=link-attribution&amp;utm_medium=referral&amp;utm_campaign=image&amp;utm_content=1084923)
 
-In this **Recommended Coding Practices** repository you will find introductory and broad material to start developing **proper code** and promote further **self-study**. 
+In this **Recommended Coding Practices** repository you will find introductory and broad material to start developing code **following good practices** and promote further **self-study**.  
 
 _______________________
 
-The material was originally designed for researchers within the Department of [Aerospace Structures and Materials](https://www.tudelft.nl/lr/organisatie/afdelingen/aerospace-structures-and-materials) of the [Faculty of Aerospace Engineering (AE)](https://www.tudelft.nl/en/ae) of the Delft University of Technology (TU Delft) in The Netherlands. 
+The material was originally designed for researchers within the Department of [Aerospace Structures and Materials](https://www.tudelft.nl/lr/organisatie/afdelingen/aerospace-structures-and-materials) of the [Faculty of Aerospace Engineering (AE)](https://www.tudelft.nl/en/ae) of the [Technische Universiteit Delft (TU Delft)](https://www.tudelft.nl) in The Netherlands. 
 ________________________
 
 Practice and enjoy!
 
 ## Contents
 
-In this repository you will find the following material to follow as a self-learner:
-- [Unix Shell commands](https://github.com/HeatherAn/recommended-coding-practices/blob/main/01-Unix-Shell-Commands.md)  
-- [Environment variables](https://github.com/HeatherAn/recommended-coding-practices/blob/main/03-Environment-Variables.md)   
-- [Version control with Git](https://github.com/HeatherAn/recommended-coding-practices/blob/main/06-Version-Control-with-Git.md)  
+In this repository you will find the following material:
+- [Unix Shell Bash commands](https://github.com/HeatherAn/recommended-coding-practices/blob/main/01-Unix-Shell-Commands.md)  
+- [Environment variables](https://github.com/HeatherAn/recommended-coding-practices/blob/main/03-Environment-Variables.md)  
+- [Aliases](https://github.com/HeatherAn/recommended-coding-practices/blob/main/04-Aliases.md) 
+- [Version control with Git](https://github.com/HeatherAn/recommended-coding-practices/blob/main/06-Version-Control-With-Git.md)  
 - [Project structure recommendations](https://github.com/HeatherAn/recommended-coding-practices/blob/main/14-Project-Structure.md)
 - [Coding conventions](https://github.com/HeatherAn/recommended-coding-practices/blob/main/15-Coding-Conventions.md)  
-- Make command
+- [Naming conventions](https://github.com/HeatherAn/recommended-coding-practices/blob/main/18-Naming-Conventions.md)  
+- [Code documentation](https://github.com/HeatherAn/recommended-coding-practices/blob/main/20-Code-Documentation.md)
 - Guidelines on what to do once you [finish a project](https://github.com/HeatherAn/recommended-coding-practices/blob/main/22-Publish-Or-Archive.md)  
 
 If you are already familiar with some of the material, you can go directly to the **cheatsheets** and the **templates**:  
@@ -41,7 +43,7 @@ The material is presented in separate **Markdown** files. In order to go through
 
 ## References
 
-The material has been mainly built upon the content provided by open sources such as the [Software Carpentry](https://software-carpentry.org/) and [Code Refinery](https://coderefinery.org/) initiatives.
+The material has re-used part of the content provided by open sources such as the [Software Carpentry](https://software-carpentry.org/) and [Code Refinery](https://coderefinery.org/) initiatives.
 
 _________________________
 
