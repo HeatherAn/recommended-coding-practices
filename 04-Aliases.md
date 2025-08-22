@@ -22,12 +22,12 @@ The `-iname` option is to do a case-insensitive match to the name of the file. T
     alias excel='"/c/Program Files/Microsoft Office/root/Office16/EXCEL.exe"'
 ```  
     
-- Close the `~/.bashrc` file, and reload it with `source` command:
+- After adding that instruction, close the `~/.bashrc` file, and reload it with `source` command:
 ```
     source ~/.bashrc
 ```
 
-Now you can use the `excel` command to open the application (e.g., `excel file.xlsx`).
+Now you can use the `excel` command to open files with that application (e.g., `excel file.xlsx`).
 
 ________________________
 
