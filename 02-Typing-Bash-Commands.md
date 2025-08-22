@@ -137,10 +137,10 @@ The `echo` commands prints whatever you write next to it to the terminal.
 
 `echo string` : prints the string `string` to the terminal.  
 
-`echo string > my_file.txt`: instead of printing the string `string` to the terminal, it prints it to the file called `my_file.txt`.  
-    For example: 
-    - when doing `echo "First line of file" > my_file.txt`, the file `my_file.txt` will now contain "First line of file" in it. 
-    - When using `>>` instead of `>`, the string will be positioned after the last line of the file. 
+`echo string > my_file.txt`: instead of printing the string `string` to the terminal, it prints it to the file called `my_file.txt`. For example:  
+
+- when doing `echo "First line of file" > my_file.txt`, the file `my_file.txt` will now contain "First line of file" in it.   
+- When using `>>` instead of `>`, the string will be positioned after the last line of the file. 
 
 ### Do you want to see the contents of the file to the screen of the terminal?
 
