@@ -118,76 +118,50 @@ _________________________________
 
 ## Using Project Templates
 
-A recommended tool for creating a proper project structure is to use **project templates**. One of these tools is the famous [Cookiecutter](https://cookiecutter.readthedocs.io/en/latest/README.html). Even though you need Python to install **Cookiecutter**, you do not have to know Python to use **Cookiecutter**. Once you run a **Cookiecutter** template, the project structure is created in your working directory. You can then proceed to code in whichever language you want/have-to.
+A recommended tool for creating a proper project (directory tree) structure is to use **project templates**. One of these tools is [Cookiecutter](https://cookiecutter.readthedocs.io/en/latest/README.html). Even though you need Python to install **Cookiecutter**, you do not have to know Python to use **Cookiecutter**. Once you run a **Cookiecutter** template, the project structure is created in your working directory. You can then proceed to code in whichever language you want/have-to. Also, even if you are not familiar with Python, you can take a look at the templates and use them as inspiration for creating your own directory structure (e.g. with Bash commands).  
 
-First install **Cookiecutter** in your system. Go to the terminal and type the following:  
+To use **Cookiecutter** you first have to install it. Go to the terminal and type the following:  
 
-   `pip install -U cookiecutter`  
+```
+pip install -U cookiecutter
+```   
+Where the `-U` flag tells the system to upgrade all packages to the newest available version (in case there are packages that have already been installed before in your system).  
 
-Where the `-U` flag tells the system to upgrade all packages to the newest available version (in case there are packages that have already been installed before in your system).
+After installing **Cookiecutter** you can tell it to run a given *project template*. For example, a project template for **Data Science** projects can be found [here](https://github.com/drivendata/cookiecutter-data-science). To run that project template, in the terminal go to the directory where you want to create the project. For the following, we will assume you are a Windows user and want to call the working directory `Project_A` in the directory `/c/Users/your_user_name/Documents/`. Then in the terminal:  
 
-After installing **Cookiecutter** you can tell it to run a given *project template*. For example, a project template for Data Science type of projects can be found [here](https://github.com/drivendata/cookiecutter-data-science). To run that project template, in the terminal go to the directory where you want to create the project. For the following, we will assume you are a Windows user and want to call the working directory `Project_A` in the directory `/c/Users/your_username/Documents/`. Then in the terminal:  
-
-   `cd /c/Users/your_username/Documents/`  
-
-   `cookiecutter https://github.com/drivendata/cookiecutter-data-science`  
-
-**Cookiecutter** will then ask you (everything within the terminal itself):  
-
-- `project_name` : choose a name for your project. In the example we have considered, the project_name would be `Project A`. In this case, the `project_name` will be included in the -for example- **README** file that the project template creates.  
-
-- `repo_name` : name of the repository that will be created. For this name, **avoid white spaces**. Use `_` instead. In the example we have considered, the `repo_name` would be `Project_A`.  
-
-- `author_name` : your name. Your name will be included as the author in the metadata of the project.  
-
-- `description` : this should be a short description of what the project is about. It will also show up in the -for example- documentation files that the project template creates.  
-
-- `Select open_source_license` : it will show you some options for open-source licenses (the [MIT](https://choosealicense.com/licenses/mit/) and the [BSD-3-Clause](https://choosealicense.com/licenses/bsd-3-clause/)). There is also the option of **No license** file. If you do not know yet under which license the code will be shared with others, you can select the **No license** file option (option #3). But then **create an empty LICENSE file** (with `touch LICENSE`) in the directory of the project. And add the respective license file once you know how the code will be shared with others.  
-
-- `s3_bucket` : this is a bucket in [Amazon cloud storage](https://aws.amazon.com/s3/). The template asks you for this in case you have a bucket in Amazon where the data is stored. You will probably not have such a cloud storage service. So you can leave it empty, and modify the documentation and `Makefiles` at a later stage.  
-
-- `aws_profile` :  this also asks you for an Amazon Web Service profile, which you probably do not have. Just leave it blank and modify the documentation and `Makefiles` at a later stage.  
-
-- `Select python_interpreter` : this asks you which Python version will you be using to code (e.g., `python3`). If you will not be working with Python, do not worry! You can let **Cookiecutter** create the project structure based on this template, and then modify the documentation and `Makefiles` accordingly. 
+```
+cd /c/Users/your_user_name/Documents/  
+cookiecutter https://github.com/drivendata/cookiecutter-data-science
+```    
+**Cookiecutter** will then ask you (everything within the terminal itself):   
+   - `project_name` : name of the project. In the example we have considered, the project_name would be `Project A`. In this case, the `project_name` will be included in the -for example- **README** file that the project template creates by default.    
+   - `repo_name` : name of the repository that will be created. For this name, **avoid white spaces**. Use `_` instead. In the example we have considered, the `repo_name` would be `Project_A`.  
+   - `author_name` : your name. Your name will be included as the author in the metadata of the project.  
+   - `description` : short description of what the project is about. It will also show up in the documentation files that the project template creates.  
+   - `Select open_source_license` : it will show you some options for open-source licenses (the [MIT](https://choosealicense.com/licenses/mit/) and the [BSD-3-Clause](https://choosealicense.com/licenses/bsd-3-clause/)). There is also the option of **No license** file. If you do not know yet under which license the code will be shared with others, you can select the **No license** file option (option #3). But then **create an empty LICENSE file** (with `touch LICENSE`) in the directory of the project. And add the respective license file once you have decided on one.  
+   - `s3_bucket` : this is a bucket in [Amazon cloud storage](https://aws.amazon.com/s3/). The template asks you for this in case you have a bucket in Amazon where the data is stored. If you do not have such a cloud storage service, then leave it empty, and modify the documentation and `Makefile` at a later stage.  
+   - `aws_profile` :  this also asks you for an Amazon Web Service profile. If you do not have one, then just leave it blank and modify the documentation and `Makefile` at a later stage.  
+   - `Select python_interpreter` : Python version you will be using to code (e.g., `python3`). If you will not be working with Python, do not worry! You can let **Cookiecutter** create the project structure based on this template, and then modify the documentation and `Makefile` accordingly. 
 
 Once you answer all those questions, **Cookiecutter** will create (in the current directory) the following structure in the `Project_A` directory:
 
 ![DataScienceCookiecutter](uploads/51cbf1d43884211169a2359c2eccf8f6/DataScienceCookiecutter.png)
 
-Once you have such structure *locally* in your work laptop/station, explore it! If you do `ls -a` to see hidden files/directories, you will see that a `.gitignore` file has already been created. Check it out!
+Now xplore it! If you do `ls -a` to see hidden files/directories, you will see that a `.gitignore` file has already been created. Check it out!
 
 Notice there is a **top-level README** file, a **LICENSE** file, a `data/` directory and a `notebook/` directory. Notice that in `.gitignore` file it is established that when using Git, Git should ignore the `data` folder and everything in it.
 
-Check more about the Data Science cookiecutter template [here](https://github.com/drivendata/cookiecutter-data-science). Not the template for your project? [There are more!](http://cookiecutter-templates.sebastianruml.name/) They are spread everywhere, but Google is always your friend to find them! Even if you do not find one exactly for your project, you can start from a template that is close to the one you need, and you can then modify it accordingly (using Bash!).
+Check more about the Data Science cookiecutter template [here](https://github.com/drivendata/cookiecutter-data-science). Not the template for your project? [There are more!](http://cookiecutter-templates.sebastianruml.name/) They are spread everywhere, but Google or ChatGPT is always your friend to find them! Even if you do not find one that applies exactly to your project, you can start from a template that is close to the one you need, and you can then modify it accordingly (using Bash).
 
-# Pushing your Structured Project to Github
+## Pushing your Structured Project to Github
 
-Now that you have created a proper project structure *locally* on your work device, we will *push* it to a Github repository.  
+Now that you have created a proper project structure *locally*, *push* it to a Github repository. Don't remember how to *push*? Check the [Using Git For The First Time](https://github.com/HeatherAn/recommended-coding-practices/blob/main/08-Using-Git-For-The-First-Time.md) section and/or the [Git Cheatsheet](https://github.com/HeatherAn/recommended-coding-practices/blob/main/13-Git-Cheatsheet.md)    
 
-- In Github, create a new project. Make it private and **do not add a README** to it (leave the box unticked).  
-
-- Once the empty repository has been created, go to the **Code** > **Local** > **Clone** button to copy its HTTPS key (or SSH key, depending on how you want to clone it). We will use this HTTPS key to "link" the *local* **main** to the *remote* **origin/main**.  
-
-- In your work laptop/station go to the terminal, and from the `Project_A` directory (if you do `pwd` you should be in `/c/Users/your_username/Documents/Project_A`) type the following commands:
-
-    - `git init` : to initialize a Git repository in that folder.  
-
-    - `git remote add origin https_key` : replace `https_key` with the actual HTTPS address of the Github repository. This will be the **origin**.  
-
-    - `git remote -v` : to make sure **origin** has been defined as the `https_key` of the Github repository for both *fetch* and *push* operations.  
-
-    - `git add .` : to *add* everything in the *current* directory to the **staging area**.  
-
-    - `git commit -m "First commit"` : *commit* everything for the first time.   
-
-    - `git push -u origin master` : *push* everything to have the Github repository updated with the *local* project structure.   
-
-
-You can now start working within the project structure, **pulling-adding-committing-and-pushing** changes, syncing the *local* repository with the *remote* Github repository.
+You can now start working within the project structure, **pulling**, **adding**, **committing** and **pushing** changes, syncing the *local* repository with the respective *remote* Github repository.
 
 ________________________
 
-[Previous : 08 - Merging or Rebasing Branches](https://github.com/HeatherAn/recommended-coding-practices/blob/main/08-Merging-or-Rebasing-Branches.md)  
-[Next : 10 - Coding Conventions](https://github.com/HeatherAn/recommended-coding-practices/blob/main/10-Coding-Conventions.md)  
+[Previous : 13 - Git Cheatsheet](https://github.com/HeatherAn/recommended-coding-practices/blob/main/13-Git-Cheatsheet.md)  
+[Next : 15 - Coding Conventions](https://github.com/HeatherAn/recommended-coding-practices/blob/main/15-Coding-Conventions.md)  
 
 [Go back to README](https://github.com/HeatherAn/recommended-coding-practices#readme)
