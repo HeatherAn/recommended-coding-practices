@@ -15,7 +15,7 @@ As a rule-of-thumb a proper directory structure should have as a minimum the fol
 - **code** folder (often named `src`)   
 ____________________________________________________________
 
-![white-male-1871436_1920](uploads/7ba5ab15e6eb1c16988da7f373521436/white-male-1871436_1920.jpg)
+![fig_reading](figures/fig_reading.jpg)
 
 Image by [Peggy und Marco Lachmann-Anke](https://pixabay.com/users/peggy_marco-1553824/?utm_source=link-attribution&amp;utm_medium=referral&amp;utm_campaign=image&amp;utm_content=1015594) from [Pixabay](https://pixabay.com/?utm_source=link-attribution&amp;utm_medium=referral&amp;utm_campaign=image&amp;utm_content=1015594)
 
@@ -53,7 +53,7 @@ Do you want to practice a bit more on it? Check out this [StackEdit app](https:/
 
 __________________________________
 
-![follow-5523784_1920](uploads/2ec51152ef31f13d7f9caf9411afc392/follow-5523784_1920.jpg)
+![fig_pointing](figures/fig_pointing.jpg)
 
 Image by [Peggy und Marco Lachmann-Anke](https://pixabay.com/users/peggy_marco-1553824/?utm_source=link-attribution&amp;utm_medium=referral&amp;utm_campaign=image&amp;utm_content=5523784) from [Pixabay](https://pixabay.com/?utm_source=link-attribution&amp;utm_medium=referral&amp;utm_campaign=image&amp;utm_content=5523784)
 
@@ -65,7 +65,7 @@ When creating the repository it is always advisable to have either a `LICENSE` f
 
 ____________________________________________
 
-![white-male-1992593_1920](uploads/166278ca87a4eecc1c40e6edd985e4c5/white-male-1992593_1920.jpg)
+![fig_noting](figures/fig_noting.jpg)
 
 Image by [Peggy und Marco Lachmann-Anke](https://pixabay.com/users/peggy_marco-1553824/?utm_source=link-attribution&amp;utm_medium=referral&amp;utm_campaign=image&amp;utm_content=1992593) from [Pixabay](https://pixabay.com/?utm_source=link-attribution&amp;utm_medium=referral&amp;utm_campaign=image&amp;utm_content=1992593)
 
@@ -82,7 +82,7 @@ There are many more [examples](https://github.com/jupyter/jupyter/wiki/A-gallery
 ____________________________________________
 
 
-![calculation-1889004_1920](uploads/ff008a93f4f9ad9977a82c1bdd00a696/calculation-1889004_1920.jpg)
+![fig_calculating](figures/fig_calculating.jpg)
 
 Image by [Peggy und Marco Lachmann-Anke](https://pixabay.com/users/peggy_marco-1553824/?utm_source=link-attribution&amp;utm_medium=referral&amp;utm_campaign=image&amp;utm_content=1889004) from [Pixabay](https://pixabay.com/?utm_source=link-attribution&amp;utm_medium=referral&amp;utm_campaign=image&amp;utm_content=1889004)
 
@@ -98,7 +98,7 @@ In every project there is data. In coding projects, data is used to e.g., build/
 ___________________________________
 
 
-![computer-1015304_1920](uploads/987f103c0a3706cf39d8dc5bcf49bbdf/computer-1015304_1920.jpg)
+![fig_computing](figures/fig_computing.jpg)
 
 Image by [Peggy und Marco Lachmann-Anke](https://pixabay.com/users/peggy_marco-1553824/?utm_source=link-attribution&amp;utm_medium=referral&amp;utm_campaign=image&amp;utm_content=1015304) from [Pixabay](https://pixabay.com/?utm_source=link-attribution&amp;utm_medium=referral&amp;utm_campaign=image&amp;utm_content=1015304)
 
@@ -141,7 +141,7 @@ cookiecutter https://github.com/drivendata/cookiecutter-data-science
 
 Once you answer all those questions, **Cookiecutter** will create (in the current directory) the following structure in the `Project_A` directory:
 
-![DataScienceCookiecutter](uploads/51cbf1d43884211169a2359c2eccf8f6/DataScienceCookiecutter.png)
+![fig_cookiecutter_ds](figures/fig_cookiecutter_ds.png)
 
 Now explore it! If you do `ls -a` to see hidden files/directories, you will see that a `.gitignore` file has already been created. Check it out!
 
