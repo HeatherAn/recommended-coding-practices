@@ -6,7 +6,7 @@ We can distinguish two types of **embedded documentation**: documentation for **
 
 ## For developers: comments
 
-Comments are meant to describe the code to other developers (including your future-self). Thus, you can use comments for planning following steps, tagging what needs to be revisited, describing complex workflows, etc. Comments can be written in the line itself next to the code, or can be written as a one or more lines before a given instruction(s) (**one-line** or **block** comments, respectively). In Python, comments are written after a `#` symbol, while in C, comments are written after a `//` or enclosed between `/*` and `*/` symbols (using white spaces between the symbols and the text; see the [Prioritize Readability](https://github.com/HeatherAn/recommended-coding-practices/blob/main/14-Prioritize-Readability.md) section).  
+Comments are meant to describe the code to other developers (including your future-self). Thus, you can use comments for planning following steps, tagging what needs to be revisited, describing complex workflows, etc. Comments can be written in the line itself next to the code, or can be written as a one or more lines before a given instruction(s) (**one-line** or **block** comments, respectively). In Python, comments are written after a `#` symbol, while in C, comments are written after a `//` or enclosed between `/*` and `*/` symbols (using white spaces between the symbols and the text; see the [Prioritize Readability](https://github.com/HeatherAn/recommended-coding-practices/blob/main/17-Prioritize-Readability.md) section).  
 
 When writing comments -regardless of the language- keep in mind the following:  
 
