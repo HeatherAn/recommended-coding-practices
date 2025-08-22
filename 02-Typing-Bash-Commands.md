@@ -118,8 +118,7 @@ ___________________________________________________________
 
 ## To create an empty file: `touch` Command 
 
-`touch my_file` : creates an empty file in the *current* directory (replace `my_file` with the name of the file -it can include its path- you want to create).  
-    For example: you want to create a `README.txt` or `script.py` file, then you type `touch README.txt` or `touch script.py` respectively.
+`touch my_file` : creates an empty file in the *current* directory (replace `my_file` with the name of the file -it can include its path- you want to create). For example: you want to create a `README.txt` or `script.py` file, then you type `touch README.txt` or `touch script.py` respectively.
 
 ### Do you want to edit the file? 
 
