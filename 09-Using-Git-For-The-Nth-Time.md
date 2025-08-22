@@ -21,7 +21,7 @@ If you are developing the code in collaboration with others, you will need to *p
 
 ## Other useful commands 
 
-`git remote rm origin` : to delete the **origin** previously defined by `git remote add origin ssh_key`. After deleting the **origin**, you can check that the former **origin** has been removed by doing `git remote –v`. You can define the new **remote** by using: `git remote add origin ssh_key` (with the corresponding `ssh_key` obtained from the Github; see [Using Git For The First Time](https://github.com/HeatherAn/recommended-coding-practices/blob/main/08-Using-Git-For-The-First-Time.md#define-the-github-repository-as-the-remote) section). 
+`git remote rm origin` : to delete the **origin** previously defined by `git remote add origin ssh_key`. After deleting the **origin**, you can check that the former **origin** has been removed by doing `git remote –v`. You can define the new **remote** by using: `git remote add origin ssh_url` (with the corresponding `ssh_url` obtained from the Github; see [Using Git For The First Time](https://github.com/HeatherAn/recommended-coding-practices/blob/main/08-Using-Git-For-The-First-Time.md#define-the-github-repository-as-the-remote) section). 
 
 _____________________________
 
