@@ -2,10 +2,10 @@
 
 ## Create a repository in Github
 
-First make sure you have created repository in Github called **Project_Y**. This will be your *remote* (online) repository. 
+First you will create a repository in Github called **Project_Y**. This will be your *remote* (online) repository. 
 
 To create a repository in Github, click on **+** button at the top panel > **New repository**:
-   - In **General** specify **Project Y** as the repository name.  
+   - In **General** specify **Project_Y** as the repository name.  
    - In **Configuration** set the visibility to **Private**.  
    - Do not add anything in the repository and just click on the **Create repository** green button.  
 
@@ -23,26 +23,26 @@ Go to your Github account > top right corner > click on your username > select *
 
 ## Define the Github repository as the remote
 
-Once you are in the landing page of your **Project_Y** repository, click on the **Code** green button > **Local** tab > **SSH**. Copy the url to clipboard. This is the url address you will give to your *local* Git repository, in order to **Project_Y** as the *remote* repository of your *local* repository. It will be of the form `git@github.com:<your_Github_username>/Project_Y.git`.
+Once you are in the landing page of your **Project_Y** repository, click on the **Code** green button > **Local** tab > **SSH**. Copy the url to clipboard. This is the url address you will give to your *local* Git repository, in order to set **Project_Y** as the *remote* repository of your *local* repository. It will be of the form `git@github.com:<your_Github_username>/Project_Y.git`.
 
-In your device, open the **terminal** (for Windows users: remember to use **Git Bash**) and go to the directory where you had initialized Git already: `~/Documents/Project_Z` (see [Setting up Git](https://github.com/HeatherAn/recommended-coding-practices/blob/main/07-Setting-Up-Git.md) section).
+In your device, open the **terminal** (for Windows users: remember to use **Git Bash**) and go to the directory where you had initialized Git already: `~/Documents/Project_Z` (see [Setting up Git](https://github.com/HeatherAn/recommended-coding-practices/blob/main/07-Setting-Up-Git.md#initialize-a-local-repository)).
 
 To add the Github **Project_Y** as the *remote* use:
 
 ```
 git remote add origin git@github.com:<your_Github_username>/Project_Y.git
 ```
-This tells Git which is the *remote* repository that will be referred to as **origin**, and that will be "linked" to the *local* repository at `~/Documents/Project_Z`. 
+This tells Git which is the *remote* repository that will be referred to as **origin**, and that will be "linked" to the *local* repository (at `~/Documents/Project_Z`). 
 
-**Keep in mind**: here we have used different names for the *local* and *remote* repositories for training purposes. In general, and especially when starting to use Git and Github, use the same name for both.
+**Keep in mind**: here we have used different names for the *local* and *remote* repositories (**Project_Z** and **Project_Y** respectively). We have done it like this for training purposes only. In general, and especially when starting to use Git and Github, use the same name for both.
 
 __________________________
 
 ### Parenthesis
 
-- If you want to make sure you have the right **origin**, you can check the defined remotes by typing `git remote –v`.  
+- If you want to make sure you have the right **origin**, you can check the defined remote(s) by typing `git remote –v`.  
 
-- Keep in mind **origin** is the alias with which your "local Git" refers to the *remote* Github repository for that *local* repository. In principle, you can change this alias, but you are advised not to (especially when learning how to use Git). During this Wiki we will stick to the **origin** and **main** aliases only.  
+- Keep in mind **origin** is the alias with which your "local Git" refers to the *remote* Github repository for that *local* repository. In principle, you can change this alias, but you are advised not to (especially when learning how to use Git). Throughout this material we will stick to the **origin** and **main** aliases only.  
 
 __________________________
 
@@ -54,25 +54,26 @@ Now you can start working on the files of your *local* **main** branch (which is
 
 When you work on files inside the directory where Git has been initialized, you have to tell Git *"hey, keep track of what I am doing to this file"* and *"hey, record the changes made to this file and add this metadata to those changes"*. The first thing is calling **adding** files to Git, and the second thing is making a **commit** of the changes made to the file.  
  
-Let’s say you started working on `file1` (e.g., a Python `.py` script) doing all changes in your device (in your *local* Git repository at `~/Documents/Project_Z`). Use:
+Let’s say you started working on `file1` (e.g., a Python `.py` script) doing and saving all changes (in your *local* Git repository at `~/Documents/Project_Z`). Use:
 
 ```
 git add file1
 ``` 
+
 This will tell Git to basically "follow" the changes made to this file and put it in the so-called **staging area**.   
 
-Let’s say you created a function on `file1`. This change is worth saving as a whole, so that you can always go back to it if needed. In order to *save* it, you have to **commit** it. To do this, type:
+Let’s say you created a function in `file1`. This change is worth saving as a whole, so that you can always go back to it if needed. In order to *save* it, you have to **commit** it. To do this, type:
 
 ```
 git commit -m “text_commit1”
 ```
 Where you need to replace `“text_commit1”` with a short description of the change made to the file. For example: `git commit –m “Added sum function”`. This will tell Git to **record such a change** with that **descriptive metadata**.   
 
-If you only type `git commit`, the editor you set by default (when installing/configuring Git) will open so that you can write the **descriptive metadata** `“text_commit1”` in it. But always try to keep `“text_commit1”` as short as possible. See the following [blog](https://chris.beams.io/posts/git-commit/) where you can find principles on how to write Git commit messages. Try to set up conventions on how to write them right from the start. It will pay off in the long-term!
+If you only type `git commit`, the editor you set by default (when installing/configuring Git) will open so that you can write the **descriptive metadata** `“text_commit1”` in it. Always try to keep `“text_commit1”` as short as possible. See the following [blog](https://chris.beams.io/posts/git-commit/) where you can find principles on how to write Git commit messages. Try to set up conventions on how to write them right from the start. It will pay off in the long-term!
 
 ### Difference between adding and committing
 
-*Adding* and *committing* might be a bit confusing at first. Think of them as if you were preparing the clothes for a trip. You first put the clothes on your bed to have an overview of what you will be taking to the trip. In this case, the act of *putting the clothes on the bed* would be `git add`; and the *bed* itself would the so-called `staging area`. 
+*Adding* and *committing* might be a bit confusing at first. Think of them as if you were preparing the clothes for a trip. You first put the clothes on your bed to have an overview of what you will be taking to the trip. In this case, the act of *putting the clothes on the bed* would be `git add`; and the *bed* itself would the so-called **staging area**. 
 
 Once you have *finally decided what to take* for your trip, you *put the clothes on the suitcase*. In this case, *putting the clothes on the suitcase* would be like doing a `git commit`.
 
@@ -84,9 +85,9 @@ While working on a file, between **adding** and **committing**, you might also f
 
 - If you want Git to *officially* track them, then you should **add** the files using `git add file_name`.   
 
-- If you do not want Git to *officially* track them, you can tell Git to ignore them. You can do this by using `git ignore`. To do this:   
+- If you do not want Git to *officially* track them, you can tell Git to ignore them. You can do this by using a `.gitignore` file. To do this:   
 
-   - create a `.gitignore` file (it is a hidden file) in the top directory of the project, where Git has been initialized. You can create it by typing: `touch .gitignore`   
+   - create a `.gitignore` file (it is a hidden file) in the top directory of the project where Git has been initialized. You can create it by typing: `touch .gitignore` (see [Typing Bash Commands](https://github.com/HeatherAn/recommended-coding-practices/blob/main/02-Typing-Bash-Commands.md#to-create-an-empty-file-touch-command)).    
 
    - Add in that file the name of each file and/or directory you want Git to ignore. For example, if you want Git to ignore all files with `csv` extension that can be found in the *current* directory, and all files inside a sub-directory called `data`. Then the file `.gitignore` would look like this:
       
@@ -95,7 +96,7 @@ While working on a file, between **adding** and **committing**, you might also f
    data/
    ```  
    
-   - *Add* and *commit* the file `.gitignore` by typing in your terminal:  
+   - Save the file, and *add* and *commit* the `.gitignore` file by typing in your terminal:  
    ```
    git add .gitignore
    git commit -m "Ignore all csv files and data sub-folder"
@@ -152,11 +153,11 @@ You can refer to a given **commit** by its *unique identifier* (*hash*) or in te
 
 Do you want to see more about how to refer to commits without writing the *hash* but using `HEAD` instead? It can get a bit confusing! But our dear friend [Stack Overflow](https://stackoverflow.com/) has quite a few discussions on it like [this one](https://stackoverflow.com/questions/2221658/whats-the-difference-between-head-and-head-in-git). 
 
-### How can I undo an *adding* or a *commit*?
+### How can I undo the *staging* or a *commit*?
  
 The following diagram shows the commands to undo the *adding* and the *committing*.  
 
-![undo_diagram](uploads/undo_diagram.png)
+![fig_git-undo](figures/fig_git-undp.jpg)
 
 Keep in mind:  
 
@@ -165,7 +166,7 @@ Keep in mind:
 
 - `git rm --cached <file>` :  it un-stages the changes made to the file `<file>` when the file has been staged for the first time.   
 
-- `git reset <commit_id>` : un-does a commit:   
+- `git reset <commit_id>` : un-does the commit with commit hash `<commit_id>` (`<commit_id>` can also be in terms of the `HEAD` pointer as explained before):   
    - `git reset --soft <commit_id>` : un-does the commit `<commit_id>` but keeps the changes to the file staged.   
    - `git reset --mixed <commit_id>` : un-does the commit `<commit_id>` and un-stages the changes (but changes are not discarded).   
    - `git reset --hard <commit_id>` : un-does the commit `<commit_id>`, un-stages the changes and discards the changes.  
