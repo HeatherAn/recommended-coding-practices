@@ -53,14 +53,14 @@ ___________________________________________________________
 
 The Shell interprets the character `~` (tilde) at the start of a path to mean “the current user’s **home directory**”. This is what the tilde (in orange font color) refers to in the figure shown above. Thus typing `cd ~` is analogue to typing `cd`. 
 
-So when is the `~` necessary then? When you want to indicate the **absolute path** to a file or directory.  
-    For example: instead of typing `cd /c/Users/your_user_name/Downloads`, you could type `cd ~/Downloads`.
+So when is the `~` necessary then? When you want to indicate the **absolute path** to a file or directory. For example: instead of typing `cd /c/Users/your_user_name/Downloads`, you could type `cd ~/Downloads`.
 
 ___________________________________________________________
 
 
-`cd ..` : when typing `..` bash understands “the directory containing this one”, or in other words, the **parent directory** of the **current directory**.
-    **Special comment**: when typing `.` (only one dot) bash understands “the current directory”. Thus, typing `cd .` will not "move" you from your current directory. 
+`cd ..` : when typing `..` bash understands “the directory containing this one”, or in other words, the **parent directory** of the **current directory**.  
+
+- **Special comment**: when typing `.` (only one dot) bash understands “the current directory”. Thus, typing `cd .` will not "move" you from your current directory. 
 
 `cd -` : when typing `-` bash understands "the previous directory you were in".   
     For example: let's say *you are* in `/c/Users/your_user_name/dir1`. Then you go directly to another directory called `/dir2` by doing `cd /c/Users/your_user_name/dir2` (that is, by using the **absolute path** to `dir2`). Then doing `cd ..` will take you to `/c/Users/your_user_name`, while doing `cd -` will take you to `/c/Users/your_user_name/dir1`.
