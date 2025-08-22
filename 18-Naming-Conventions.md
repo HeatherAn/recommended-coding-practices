@@ -1,8 +1,8 @@
 # Naming Conventions
 
-Names can really make a difference when it comes to how you future-self and that of others will be able to understand and reuse the code.  
+Names can really make a difference when it comes to how your future-self and others will be able to understand and re-use the code.  
 
-- Use **shorter** names for **short-lived variables** such as index or loop variables. For example: use `i` for the variable that iterates over a **for** loop.  
+- Use **shorter** names for **short-lived variables** such as index or loop variables. For example: use `i` for the variable that iterates over a `for` loop.  
 
 - Use **descriptive** names for **long-lived variables** (functions, methods, etc.). For example: use `rectangle` for a function that defines the coordinates of a rectangle, instead of calling it `r` or `rect`  
 
@@ -19,7 +19,7 @@ More specific rules on naming objects depend on which object we are talking abou
 
 ________________________
 
-[Previous : 12 - Prioritize Readability](https://github.com/HeatherAn/recommended-coding-practices/blob/main/12-Prioritize-Readability.md)  
-[Next : 14 - Code Errors](https://github.com/HeatherAn/recommended-coding-practices/blob/main/14-Code-Errors.md)  
+[Previous : 17 - Prioritize Readability](https://github.com/HeatherAn/recommended-coding-practices/blob/main/17-Prioritize-Readability.md)  
+[Next : 19 - Code Errors](https://github.com/HeatherAn/recommended-coding-practices/blob/main/19-Code-Errors.md)  
 
 [Go back to README](https://github.com/HeatherAn/recommended-coding-practices#readme)
