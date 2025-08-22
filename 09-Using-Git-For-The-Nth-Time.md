@@ -21,7 +21,7 @@ If you are developing the code in collaboration with others, you will need to *p
 
 ## Other useful commands 
 
-`git remote rm origin` : to delete the **origin** previously defined by `git remote add origin ssh_key`. After deleting the **origin**, you can check that the former **origin** has been removed by doing `git remote –v`. You can define the new **remote** by using: `git remote add origin ssh_key` (with the corresponding `ssh_key` obtained from the Github; see [Using Git For The First Time](https://github.com/HeatherAn/recommended-coding-practices/blob/main/08-Using-Git-For-The-First-Time.md) section). 
+`git remote rm origin` : to delete the **origin** previously defined by `git remote add origin ssh_key`. After deleting the **origin**, you can check that the former **origin** has been removed by doing `git remote –v`. You can define the new **remote** by using: `git remote add origin ssh_key` (with the corresponding `ssh_key` obtained from the Github; see [Using Git For The First Time](https://github.com/HeatherAn/recommended-coding-practices/blob/main/08-Using-Git-For-The-First-Time.md#define-the-github-repository-as-the-remote) section). 
 
 _____________________________
 
@@ -38,10 +38,10 @@ _____________________________
 `git diff id_commit1 id_commit2` : where `id_commit1` and `id_commit2` would be the **unique identifiers** of the commits (that can be seen with `git log`). This will show the difference between the two versions of the file (when `id_commit1` was committed and `id_commit2` was committed).  
 
 - The `diff` command is a very powerful one. For all information about `git diff` do: `git diff --help` (it opens the help page in a browser).    
-
 - Check out [this video](https://youtu.be/Wk-IK2uJt28) where the presenter talks about `git diff` and configuring the `diff.tool` global Git configuration variable to visualize the difference between two version using the `vimdiff` tool (by using the `difftool` command). A few remarks about the video:
     * The presenter in this case is working in a Linux system (that is why he uses `man` as a help command) and he is using `vim` as his default editor (see about global Git configuration in [Setting up Git](https://github.com/HeatherAn/recommended-coding-practices/blob/main/07-Setting-Up-Git.md) section).  
     * The presenter often talks about the **index**. If you go to the `./git` directory, you will see an `index` file which gets constantly updated. In very rough terms, the **index** helps Git "know" what is being **tracked** and what is **not being tracked but has been changed** in a Git repository. That is how Git can give you messages letting you know whenever you have made changes to a file that you have not added nor committed yet.  
+    * Keep in mind software like **VSCode** have also ways to visualize the `git diff` output, highlighting the differences between versions.  
 
 `git checkout commit_id file1` : to recover the version of the file (`file1`) recorded with the commit `commit_id`. If you use this by mistake, you can recover the current version of the file by doing: `git checkout HEAD file1` (replacing `file1` by the name of the file you want to recover).
 
@@ -56,7 +56,7 @@ _________________________
 
 #### Interested in more?
 
-See the Gitlab cheatsheet [here](https://github.com/HeatherAn/recommended-coding-practices/blob/main/13-Git-Cheatsheet.md)
+See a Git cheatsheet [here](https://github.com/HeatherAn/recommended-coding-practices/blob/main/13-Git-Cheatsheet.md)
 
 ________________________
 
