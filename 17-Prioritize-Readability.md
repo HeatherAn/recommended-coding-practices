@@ -53,7 +53,7 @@ Use **white spaces** consistently throughout the code. The following rules are b
     value = 3
     ```
 
-#### Blank lines
+## Blank lines
 
 Use blank lines to separate your code into **logical sections**. For example, in Python write:
 
