@@ -10,7 +10,7 @@ Spend some time thinking about the design of the code you will be developing to 
 
 - **Avoid nesting** functions! Nesting functions refers to writing functions inside functions. The more you nest functions, the more difficult and tricky it becomes to modify them and built upon them.  
 
-Check out the [**KISS principle**](https://people.apache.org/~fhanik/kiss.html).
+Check out the [**KISS principle**](https://www.geeksforgeeks.org/software-engineering/kiss-principle-in-software-development/).
 
 
 ________________________
