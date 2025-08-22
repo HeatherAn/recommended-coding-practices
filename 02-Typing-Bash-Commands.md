@@ -19,7 +19,7 @@ ____________________________
 
 When the terminal opens, it opens *at a specific location* within the device. To see *where* you are (in which directory you are), use the **print working directory** `pwd` command. When typing `pwd` and pressing the **Enter** key, the *current* directory (the directory you are in) will be printed in the terminal.
 
-![Fig_TermPWD](uploads/18e0eb306cc6a3f14460c4bc8035e81f/Fig_TermPWD.png)
+![fig_terminal-pwd](figures/fig_terminal-pwd.png)
 
 In the figure above, *orange rectangles* cover the space where your **username** shows up. *Light blue rectangles* cover the space where the **device name** shows up. In this case, typing the `pwd` command prints the **home directory** of the *current* user: `/c/Users/your_user_name`.  
 
