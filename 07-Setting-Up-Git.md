@@ -99,9 +99,9 @@ The **origin** will also have its own **main** branch by default. Thus when look
 
 This *pushing* and *pulling* workflow becomes extremely important when you work with more branches, either by yourself (you create branches to explore testing of the code for example) or in collaboration with others (each collaborator works on a separate branch for example). We will cover more of this in the [Using Git with Branches](https://github.com/HeatherAn/recommended-coding-practices/blob/main/10-Using-Git-With-Branches.md) section.
 
-![Figure_GitBigSchemeIndiv](uploads/f5dca3c17f7f3e7d216af190f4c329f2/Figure_GitBigSchemeIndiv_Github.png)
+![fig_git-indiv-github](figures/fig_git-indiv-github.png)
 
-![Figure_GitBigSchemeCollab](uploads/7ceff401eece4672535ef4ea6825e128/Figure_GitBigSchemeCollab_Github.png)
+![fig_git-collab-github](figures/fig_git-collab-github.png)
 
 In the following section, we will start by providing the basics to do version control on files without dealing (yet) with collaborators and without creating (yet) more branches. 
 
