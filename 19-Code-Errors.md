@@ -10,13 +10,13 @@
 
 ## Typos
 
-Typos are typographical errors that we all make. Sometimes a very long error message can arise because of a very simple typo. For example: just by typing fast you can make a typo in the name of a given file, and then you will get a **File not found** type of error. So before panicking, **always check for typos!**
+Typos are typographical errors that we all make. Sometimes a very long error message can arise because of a very simple typo. For example: just by typing fast you can make a typo in the name of a given file, and then you will get a `File not found` type of error. So before panicking, **always check for typos!**
 
 ## Read Errors
 
-Every language has its own way of showing errors. Some of them can be quite informative and may seem a bit dramatic. But they can actually be triggered by typos or errors that are quite straight forward to fix. Therefore, the recommendation is to **always read the error**, and **understand how errors are informed** by the language (compiler/interpreter). 
+Every language has its own way of showing errors. Some of them can be quite informative and may seem a bit dramatic. But they can actually be triggered by typos or errors that are quite straight forward to fix. Therefore, the recommendation is to **always read the error**, and **understand how errors are informed** by the language (compiler/interpreter) you are using. 
 
-To take as a reference: in **Python**, errors are given in the form of **tracebacks**. A traceback refers to the **sequence of function calls** that led to a specific type of error. In the last line of each traceback, Python will tell you the *type of error* it found and will give a more detailed *error message*.  
+To take as a reference: in **Python**, errors are given in the form of **tracebacks**. A traceback refers to the **sequence of function calls** that led to a specific type of error. In the last line of each traceback, Python will tell you the *type of error* it found, and will give a more detailed *error message*.  
 
 Among Python errors and so-called **Exceptions**, the more common ones are:
 
@@ -53,7 +53,7 @@ Use **assertions** and **test** the code.
 
 ### Assertions
 
-An assertion is a statement that **something must be true at a certain point** in a program. An assertion that is not satisfied, it is indicative of an error (a.k.a. bug) in the program. When you first start writing the code, add assertions to it as an intrinsic part of functions (and methods). 
+An assertion is a statement that **something must be true at a certain point** in a program. An assertion that is not satisfied, it is indicative of an error (bug) in the code. When you first start writing the code, add assertions to it as an intrinsic part of functions (and methods). 
 
 In general assertions fall into three categories:
 
@@ -61,14 +61,14 @@ In general assertions fall into three categories:
 - **Post-condition**: something that the function guarantees is true **when it finishes**.
 - **Invariant**: something that is **always true**.
 
-Different languages have different ways of defining assertions. For example, in Python you can use the `assert` statement to write assertions in the code. See more about `assert` [here](https://docs.python.org/3/reference/simple_stmts.html#assert) and check examples in the [Software Carpentry lesson](https://swcarpentry.github.io/python-novice-inflammation/10-defensive/index.html) on **Defensive Programming**. The lesson uses Python, but principles can apply to all languages!
+Different languages have different ways of defining assertions. For example, in Python you can use the `assert` statement to write assertions in the code. See more about `assert` [here](https://docs.python.org/3/reference/simple_stmts.html#assert) and check examples in the Software Carpentry lesson on [Defensive Programming](https://swcarpentry.github.io/python-novice-inflammation/10-defensive/index.html). The lesson uses Python, but principles can apply to all languages!
 
-In C language assertions are implemented via the `assert` macro. Check out [this link](https://ptolemy.berkeley.edu/~johnr/tutorials/assertions.html) for further information on C `assert`.
+In C language, assertions are implemented via the `assert` macro. Check out [this link](https://ptolemy.berkeley.edu/~johnr/tutorials/assertions.html) for further information on C `assert`.
 
 
 ### Testing
 
-Testing is a *must* to ensure the code does what it is *supposed to be doing*. There are different philosophies on how to approach testing. Here we will stick to two basic principles:
+Testing is a *must* to ensure the code *works*. There are different philosophies on how to approach testing. Here we will stick to two basic principles:
 
 - Work **one step at a time**. Print and plot as many outputs of instructions as necessary, to see what the code is doing at each step of the way.  
 
@@ -82,7 +82,7 @@ Following these principles, when testing the code:
 - Check **conservation laws** (invariants).
 - Visualize! 
 
-Once testing has uncovered problems, the next step is to fix them! This is what is called **debugging**. You will most likely spend >80% of the time debugging a code. Do not worry! That is normal! As mentioned before: **check for typos**, **understand** what the language/compiler/interpreter is informing you, and **read the errors**. Some errors will be easily spotted. But some will not. Some errors will refer to specific issues with the writing of the code (syntax errors, index errors, file not found type of errors, etc.), while others will point out problems related to the actual "functioning" or "processing" of the code (e.g., an algorithm does not converge because of rounding errors).
+Once testing has uncovered problems, the next step is to fix them! This is what is called **debugging**. You will most likely spend >80% of the time debugging a code. Do not worry! That is normal! As mentioned before: **check for typos**, **understand** what the language/compiler/interpreter is informing you, and **read the errors**. Some errors will be easily spotted. Some will not. Some errors will refer to specific issues with the writing of the code (syntax errors, index errors, file not found type of errors, etc.), while others will point out problems related to the actual "functioning" or "processing" of the code (e.g., an algorithm does not converge because of rounding errors).  
 
 For debugging the code:   
 
@@ -93,18 +93,20 @@ For debugging the code:
 
 # Use Git Branches!
 
-Every test, new feature and annoying bug should have its own Git branch. Branches allow you to isolate work. 
+Every test, new feature and annoying bug should have its own Git branch. Branches allow you to isolate work and experiment with the code without modifying what works already (e.g., the "official" version).  
 
 - Create a **strategy** on how to use the different Git branches. Having a strategy is crucial regardless if you work with collaborators or not. Check [this article](https://www.toptal.com/git/git-workflows-for-pros-a-good-git-guide) where the author explains different branches strategies. 
-- Use **one branch per task**.
-- **Name all branches consistently**. For example: use a naming convention of `test_X`, `feature_X` or `issue_X` for naming a given (**X**) test, feature or issue respectively. And stick to those conventions!
-- **Document** the creation and naming of branches in a supporting documentation file within the project structure (e.g., a README file within a `testing` directory). 
-- Work *locally* on a particular branch. If the task was successfully performed, congratulations to yourself! Do you need to merge it with the *local* **main**? Use `git merge` command. You can then push the *local* **main** to the *remote* **origin/main**.  
+- Use **one branch per task**.  
+- **Name all branches consistently**. For example: use a naming convention of `test_X`, `feature_X` or `issue_X` for naming a given (**X**) test, feature or issue respectively. And stick to those conventions!  
+- **Document** the creation and naming of branches in a supporting documentation file within the project structure (e.g., a README file within a `testing` directory).  
+- Work *locally* on a particular branch. If the task was successfully performed, congratulations to yourself! Do you need to merge it with the *local* **main**? Use `git merge` command. You can then push the *local main* to the *remote* **origin/main**.
+
+Do you need a reminder on how to use Git branches? Then check the [Using Git With Branches](https://github.com/HeatherAn/recommended-coding-practices/blob/main/10-Using-Git-With-Branches.md) section as well as the [Git Cheatsheet](https://github.com/HeatherAn/recommended-coding-practices/blob/main/13-Git-Cheatsheet.md).  
 
 
 ________________________
 
-[Previous : 13 - Naming Conventions](https://github.com/HeatherAn/recommended-coding-practices/blob/main/13-Naming-Conventions.md)  
-[Next : 15 - Code Documentation](https://github.com/HeatherAn/recommended-coding-practices/blob/main/15-Code-Documentation.md)  
+[Previous : 18 - Naming Conventions](https://github.com/HeatherAn/recommended-coding-practices/blob/main/18-Naming-Conventions.md)  
+[Next : 20 - Code Documentation](https://github.com/HeatherAn/recommended-coding-practices/blob/main/20-Code-Documentation.md)  
 
 [Go back to README](https://github.com/HeatherAn/recommended-coding-practices#readme)
