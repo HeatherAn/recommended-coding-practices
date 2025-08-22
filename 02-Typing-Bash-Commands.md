@@ -150,9 +150,10 @@ ___________________________________________________________
 
 ## To move (or rename) files : `mv` Command 
 
-`mv file1 dir1` : when the first argument is a *file* and the second argument is a *directory*, `mv` moves the *file* to that *directory*. You can provide the name of the file (if the file is in the *current* directory) or the path of the file (if the file is in another directory).
-    For example: let's say *you are* in `/c/Users/your_user_name/dir1` and you want to move a PDF file called `file1.pdf` (that is in the *current* directory) to the `/c/Users/your_user_name/dir2` directory. Then you can type: `mv file1.pdf /c/Users/your_user_name/dir2`, or more effectively: `mv file1.pdf ../dir2`  
-    Another example: let's say *you are* in `/c/Users/your_user_name/` and you want to move `file1.pdf` (which is in `/c/Users/your_user_name/dir1`) to `/c/Users/your_user_name/dir2`. Then you can type: `mv dir1/file1.pdf dir2`  
+`mv file1 dir1` : when the first argument is a *file* and the second argument is a *directory*, `mv` moves the *file* to that *directory*. You can provide the name of the file (if the file is in the *current* directory) or the path of the file (if the file is in another directory).  
+
+- For example: let's say *you are* in `/c/Users/your_user_name/dir1` and you want to move a PDF file called `file1.pdf` (that is in the *current* directory) to the `/c/Users/your_user_name/dir2` directory. Then you can type: `mv file1.pdf /c/Users/your_user_name/dir2`, or more effectively: `mv file1.pdf ../dir2`  
+- Another example: let's say *you are* in `/c/Users/your_user_name/` and you want to move `file1.pdf` (which is in `/c/Users/your_user_name/dir1`) to `/c/Users/your_user_name/dir2`. Then you can type: `mv dir1/file1.pdf dir2`    
 
 `mv file1 file2` : when both arguments are *file names*, `mv` renames the first file to the second file name provided as input (here you should replace `file1` by the name of the file you want to rename, and `file2` by the new name you want to give it). Both `file1` and `file2` can also be given as paths. For example: `mv /c/Users/your_user_name/file1 /c/Users/your_user_name/file2`.
 
