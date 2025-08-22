@@ -27,7 +27,7 @@ Among Python errors and so-called **Exceptions**, the more common ones are:
 - `FileNotFoundError` (e.g., file is not in the specified directory)
 - `UnsupportedOperation` (e.g., attempt to write to a file that was opened read-only)
 
-Check out more on **Errors and Exceptions** in the [Software Carpentry lesson](https://swcarpentry.github.io/python-novice-inflammation/09-errors/index.html)!
+Check out more on **Errors and Exceptions** in the [Software Carpentry lesson](https://swcarpentry.github.io/python-novice-inflammation/09-errors.html)!
 
 In **C** language on the other hand, error messages are not always easy to read nor they are informative enough for you to figure out what is really happening. There may be errors that happen when compiling the code, while others may happen during the execution of the code. Some errors can even *go* silently during compilation and execution, and you will only notice them when analyzing the expected output.
 
@@ -61,7 +61,7 @@ In general assertions fall into three categories:
 - **Post-condition**: something that the function guarantees is true **when it finishes**.
 - **Invariant**: something that is **always true**.
 
-Different languages have different ways of defining assertions. For example, in Python you can use the `assert` statement to write assertions in the code. See more about `assert` [here](https://docs.python.org/3/reference/simple_stmts.html#assert) and check examples in the Software Carpentry lesson on [Defensive Programming](https://swcarpentry.github.io/python-novice-inflammation/10-defensive/index.html). The lesson uses Python, but principles can apply to all languages!
+Different languages have different ways of defining assertions. For example, in Python you can use the `assert` statement to write assertions in the code. See more about `assert` [here](https://docs.python.org/3/reference/simple_stmts.html#assert) and check examples in the Software Carpentry lesson on [Defensive Programming](https://swcarpentry.github.io/python-novice-inflammation/10-defensive.html). The lesson uses Python, but principles can apply to all languages!
 
 In C language, assertions are implemented via the `assert` macro. Check out [this link](https://ptolemy.berkeley.edu/~johnr/tutorials/assertions.html) for further information on C `assert`.
 
