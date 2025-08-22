@@ -63,8 +63,7 @@ ___________________________________________________________
 
 - **Special comment**: when typing `.` (only one dot) bash understands “the current directory”. Thus, typing `cd .` will not "move" you from your current directory. 
 
-`cd -` : when typing `-` bash understands "the previous directory you were in".   
-    For example: let's say *you are* in `/c/Users/your_user_name/dir1`. Then you go directly to another directory called `/dir2` by doing `cd /c/Users/your_user_name/dir2` (that is, by using the **absolute path** to `dir2`). Then doing `cd ..` will take you to `/c/Users/your_user_name`, while doing `cd -` will take you to `/c/Users/your_user_name/dir1`.
+`cd -` : when typing `-` bash understands "the previous directory you were in". For example: let's say *you are* in `/c/Users/your_user_name/dir1`. Then you go directly to another directory called `/dir2` by doing `cd /c/Users/your_user_name/dir2` (that is, by using the **absolute path** to `dir2`). Then doing `cd ..` will take you to `/c/Users/your_user_name`, while doing `cd -` will take you to `/c/Users/your_user_name/dir1`.
 
 __________________________________________________________________
 
@@ -104,9 +103,11 @@ ___________________________________________________________
  
 ## To create directories : `mkdir` Command 
 
-`mkdir name_dir` : make (create) directory called `name_dir`. Replace `name_dir` by the name of the directory to be created within the **current directory**, or it can be the **absolute path** with the name of the new directory. 
-    For example: let's say *you are* in `/c/Users/your_user_name/dir1`. Then you can create a sub-directory called `sub_dir1` within `dir1` by doing `mkdir sub_dir1`.  
-    Another example: let's say *you are* in `/c/Users/your_user_name/dir1`. Then you can create a directory `dir2` in the **parent directory** of `dir1` by doing `mkdir ../dir2`. Do `pwd` to see you have not actually *moved*! Do then `cd ..` and `ls` to see that the `dir2` has been created.  
+`mkdir name_dir` : make (create) directory called `name_dir`. Replace `name_dir` by the name of the directory to be created within the **current directory**, or it can be the **absolute path** with the name of the new directory.  
+
+- For example: let's say *you are* in `/c/Users/your_user_name/dir1`. Then you can create a sub-directory called `sub_dir1` within `dir1` by doing `mkdir sub_dir1`.   
+
+- Another example: let's say *you are* in `/c/Users/your_user_name/dir1`. Then you can create a directory `dir2` in the **parent directory** of `dir1` by doing `mkdir ../dir2`. Do `pwd` to see you have not actually *moved*! Do then `cd ..` and `ls` to see that the `dir2` has been created.  
 
 `mkdir –p name_dir/sub_name_dir/subsub_name_dir` : the `-p` flag allows `mkdir` to create a directory with any number of **nested sub-directories** in a **single operation** (a single line of commands). Then from the **current directory**, you can create a structure of directories inside it! 
 
@@ -135,12 +136,13 @@ You can start editing a file (any text type of file) by using:
 
 The `echo` commands prints whatever you write next to it to the terminal. 
 
-`echo string` : prints the string `string` to the terminal.  
+`echo string` : prints the string `string` to the terminal.   
 
 `echo string > my_file.txt`: instead of printing the string `string` to the terminal, it prints it to the file called `my_file.txt`. For example:  
 
 - when doing `echo "First line of file" > my_file.txt`, the file `my_file.txt` will now contain "First line of file" in it.   
-- When using `>>` instead of `>`, the string will be positioned after the last line of the file. 
+
+- When using `>>` instead of `>`, the string will be positioned after the last line of the file.   
 
 ### Do you want to see the contents of the file to the screen of the terminal?
 
@@ -153,6 +155,7 @@ ___________________________________________________________
 `mv file1 dir1` : when the first argument is a *file* and the second argument is a *directory*, `mv` moves the *file* to that *directory*. You can provide the name of the file (if the file is in the *current* directory) or the path of the file (if the file is in another directory).  
 
 - For example: let's say *you are* in `/c/Users/your_user_name/dir1` and you want to move a PDF file called `file1.pdf` (that is in the *current* directory) to the `/c/Users/your_user_name/dir2` directory. Then you can type: `mv file1.pdf /c/Users/your_user_name/dir2`, or more effectively: `mv file1.pdf ../dir2`  
+
 - Another example: let's say *you are* in `/c/Users/your_user_name/` and you want to move `file1.pdf` (which is in `/c/Users/your_user_name/dir1`) to `/c/Users/your_user_name/dir2`. Then you can type: `mv dir1/file1.pdf dir2`    
 
 `mv file1 file2` : when both arguments are *file names*, `mv` renames the first file to the second file name provided as input (here you should replace `file1` by the name of the file you want to rename, and `file2` by the new name you want to give it). Both `file1` and `file2` can also be given as paths. For example: `mv /c/Users/your_user_name/file1 /c/Users/your_user_name/file2`.
@@ -194,6 +197,7 @@ ___________________________________________________________
 When copying/moving/deleting a lot of files/directories at once: use **wildcards!**
 
 - The asterisks `*` is a wildcard that **matches zero or more characters**. For example: let's say *you are* in `/c/Users/your_user_name/dir1` and you have a sub-directory in it called `sub_dir1`. You want to move all `.txt` files that are in `dir1` into `sub_dir1`. Then in `/c/Users/your_user_name/dir1` you can type: `mv *.txt sub_dir1`. This will move all `.txt` files at once.  
+
 - The `?` is a different wildcard that **matches exactly one character**. For example: let's say *you are* in a given directory, and inside that directory you have 3 files called `data.txt`, `data1.txt` and `data10.txt`. Then `data?.txt` would refer only to `data1.txt`. While `data*.txt` would refer to `data.txt`, `data1.txt` and `data10.txt`.  
 
 ___________________________________________________________  
@@ -233,6 +237,7 @@ The *pipe* '|' takes the output of the `history` command, and it gives it as inp
 Not to be confused with **re-directing** which uses the '>' and '<' symbols for output re-direction and input re-direction, respectively.   
 
 - The **output re-direction '>'** is what we have seen before (see `echo` command example), when the output of the instructions to the left of the '>' symbol is re-directed to a file (which is specified to the right of the '>' symbol).   
+
 - The **input re-direction '<'** gives the contents of the file specified to the right of the '<' symbol, as input to the instruction specified to the left of the '<' symbol.  
 ___________________________________________________________  
 
