@@ -13,7 +13,7 @@ ___________________
 **To keep in mind**: in Gitlab, a repository is also referred to as a **project**.
 ___________________
 
-[!fig_phd-mess](figures/fig_phd-mess.gif)
+![fig_phd-mess](figures/fig_phd-mess.gif)
 
 [“Piled Higher and Deeper”](http://phdcomics.com/comics/archive.php?comicid=1531) by Jorge Cham, [http://www.phdcomics.com](http://www.phdcomics.com)
 
