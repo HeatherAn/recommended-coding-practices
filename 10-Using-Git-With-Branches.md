@@ -4,7 +4,7 @@ So far you have a *local main* branch (in `~/Documents/Project_Z`) and a *remote
 
 Up to this point -where you have been working by yourself on a repo- **branching** can be understood as creating a **separate "copy"** of a repository at a given point in time, for a separate use. So that each branch is a different line of development.  
 
-Now, branches are useful not only when you are working on a code by yourself, but also when coding in collaboration with others. When working individually on a code, you could for example have a branch called `testing` (for testing some functionality in the code) or a branch called `issue_X` to solve a specific issue with the code. When collaborating with others, each collaborator in charge of a specific task can work in a separate branch (each called `task_id`, with `id` being an identifier for the specific task), and merge to the *remote main* only after testing such task.     
+Now, branches are useful not only when you are working on a code by yourself, but also when coding in collaboration with others. When working individually on a code, you could for example have a branch called `testing` (for testing some functionality in the code) or a branch called `issue_X` to solve a specific issue with the code. When collaborating with others, each collaborator in charge of a specific task can work in a separate branch (e.g., each called `task_id`, with `id` being an identifier for the specific task), and merge to the *remote main* only after testing such task.     
 
 ## How can I create more branches? 
 
@@ -17,7 +17,7 @@ git switch -c name_branch
 ```
 Where `name_branch` is the name of the new *local* branch to be created. This will create a new branch called `name_branch` starting from your *local main* branch and starting from the `HEAD` commit, and it will switch to that branch right away. When being in the `name_branch`, you will see the same files as in the *local main* branch. But all changes made while being on the `name_branch` will "stay" there, and they will be independent from the changes made to the same files in the *local main* branch.  
 
-If you want to create a branch from your *local main* but from how the *local main* was -for example- two commits ago, you have to speficy the commit *hash* as `git switch -c name_branch commit_id` (or use `HEAD~2` as `commit_id`).   
+If you want to create a branch from your *local main* but from how the *local main* was -for example- two commits ago, you have to speficy the commit *hash*: `git switch -c name_branch commit_id` (or use `HEAD~2` instead of the commit hash `commit_id`).   
 
 ## How to know in which branch I am?
 
@@ -27,7 +27,7 @@ If you use the `--all` option (so `git branch --all`) you will see a list of all
 
 ## How to switch between branches?
 
-To switch from the current branch to another you can use `git switch name_branch`, where `name_branch` is the name of the branch you want to move into. This instruction works for Git versions later than 2.23. For older versions you can also switch from the current branch to another one called `name_branch` by doing `git checkout name_branch`. Does `git checkout` sound familiar? Yes! We have already used it to restore a specific version of a file before in [Using Git For The Nth Time](https://github.com/HeatherAn/recommended-coding-practices/blob/main/09-Using-Git-For-The-Nth-Time.md). The `checkout` command is a very versatile one! See more by looking at the manual with `git checkout --help`.
+To switch from the current branch to another you can use `git switch name_branch`, where `name_branch` is the name of the branch you want to move into. This instruction works for Git versions later than 2.23. For older versions you can also switch from the current branch to another one called `name_branch` by doing `git checkout name_branch`. Does `git checkout` sound familiar? Yes! We have already used it to restore a specific version of a file before in [Using Git For The Nth Time](https://github.com/HeatherAn/recommended-coding-practices/blob/main/09-Using-Git-For-The-Nth-Time.md#other-useful-commands). The `git checkout` command is a very versatile one! See more by looking at the manual with `git checkout --help`.
 
 ____________________
 
@@ -50,6 +50,8 @@ _________________
 ### Parenthesis
 
 We had seen before that `git log` allows you to see the history of commits. When having different branches, `git log` **does not show all branches** all the time. By default `git log` only shows the commit history of the branch **you are currently in**. If you want to see the commit history of a specific branch you have to specify it as: `git log name_branch` (where `name_branch` is the name of the branch you want to see its history of commits). If you want to see the commit history of all branches do: `git log --all`.
+
+Keep in mind, software like **VSCode** allows you to visualize the branching and their commit histories altogether (see info on source control graph [here](https://code.visualstudio.com/updates/v1_93#_source-control)).     
 _________________
 
 ## Common branch aliases
@@ -64,7 +66,7 @@ ________________
 
 When having more branches than a *local main* and a *remote main*, keep in mind the following commands:  
 
-- `git remote add name_remote ssh_key` : to add a new remote called `name_remote` with the url `ssh_key`. This is how we have defined the **origin** before (see [Using Git For The First Time](https://github.com/HeatherAn/recommended-coding-practices/blob/main/08-Using-Git-For-The-First-Time.md)). You can use such instruction to define other *remote* repositories. For example, an **upstream** *remote* repo.  
+- `git remote add name_remote ssh_url` : to add a new remote called `name_remote` with the url `ssh_url`. This is how we have defined the **origin** before (see [Using Git For The First Time](https://github.com/HeatherAn/recommended-coding-practices/blob/main/08-Using-Git-For-The-First-Time.md#define-the-github-repository-as-the-remote)). You can use such instruction to define other *remote* repositories. For example, an **upstream** *remote* repo.  
 - `git remote remove name_remote` : very useful command to remove the "link" to an already defined *remote*.   
 - `git remote rename old_name new_name`: changes the alias of the *remote* from the `old_name` to a `new_name`.    
 _________________
@@ -79,6 +81,6 @@ Having said that, by default Git understands that `git push origin main` is `git
 ______________________
 
 [Previous : 09 - Using Git For the Nth Time](https://github.com/HeatherAn/recommended-coding-practices/blob/main/09-Using-Git-For-The-Nth-Time.md)  
-[Next : 11 - Merging or Rebasing Branches](https://github.com/HeatherAn/recommended-coding-practices/blob/main/11-Merging-Or-Rebasing-Branches.md)  
+[Next : 11 - Merging Or Rebasing Branches](https://github.com/HeatherAn/recommended-coding-practices/blob/main/11-Merging-Or-Rebasing-Branches.md)  
 
 [Go back to README](https://github.com/HeatherAn/recommended-coding-practices#readme)
