@@ -10,11 +10,15 @@
 
 `git config --global core.editor “name editor“` : set the default text editor. For example:    
 
-    - For **Kate** (Linux):  `git config --global core.editor "kate"`  
-    - For **Gedit** (Linux, Windows):  `git config --global core.editor "gedit --wait --new-window"`   
-    - For **Vim** (all): `git config --global core.editor "vim"`  
-    - For **VSCode** (all): `git config --global core.editor "code --wait"`  
-    - For **Emacs** (all):  `git config --global core.editor "emacs"`    
+- For **Kate** (Linux):  `git config --global core.editor "kate"`  
+
+- For **Gedit** (Linux, Windows):  `git config --global core.editor "gedit --wait --new-window"`   
+
+- For **Vim** (all): `git config --global core.editor "vim"`   
+
+- For **VSCode** (all): `git config --global core.editor "code --wait"`   
+
+- For **Emacs** (all):  `git config --global core.editor "emacs"`    
 
 `git config --system --list` :  list the `--system` settings which apply to every user on the system/device and all their repositories.  
 
