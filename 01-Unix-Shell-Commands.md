@@ -6,7 +6,7 @@ It allows you to **automatize** processes and **access** the files and directori
 
 The most popular Unix Shell is **Bash**: the **Bourne Again SHell**. But there are many more! In this repository we will only focus on **Bash**.
 
-![Figure_UnixShell](uploads/3a3bf0fd49b2b28e67422cc9a4723729/Figure_UnixShell.png)
+![fig_unix-shell](figures/fig_unix-shell.png)
 
 ## First things first: let's install Bash
 
