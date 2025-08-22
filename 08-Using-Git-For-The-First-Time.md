@@ -94,6 +94,26 @@ While working on a file, between **adding** and **committing**, you might also f
       git add .gitignore
       git commit -m "Ignore all csv files and data sub-folder"
       ```   
+      - If you want to see what files or directories are being ignored by Git, use `git status --ignored`  
+      - If you want Git to ignore all files with a given extension **except one file**, you can use the `!` symbol. For example: let's say you tell Git to ignore all files with `csv` extension except for `register_total.csv`. Then `.gitignore` file should look like this:
+      ```
+      *.csv  
+      !register_total.csv
+      ```  
+      Every time you change the `.gitignore` file, do not forget to *add* it and *commit* it.
+      - A bit of advice on **what kind of files** should be ignored:  
+         - log files     
+         - files with (API) keys/credentials  
+         - files with sensitive information (especially if the project is shared with others)  
+         - system files like `Desktop.ini` in Windows, `.DS_Store` on macOS, etc.   
+      In [gitignore.io](https://www.toptal.com/developers/gitignore) you can find other type of files that are recommended to be ignored by Git depending on your operating system, IDE or programming language.  
+      - You can also include comments in `.gitignore` files, in case you want to provide more documentation about the files that are being ignored. The lines (in the `.gitignore` file)  starting with `#` symbol, are considered as *comments*.  
+      - If for some reason you would like Git to track a file that has already been ignored (i.e., included in the `.gitignore` file), then delete it from the `.gitignore` file, and *add* the file to the **staging area** by using the `f` flag, forcing Git to consider it:  
+      ```
+      git add -f file
+      ```  
+      Where `file` would be the file that was in `.gitignore` and that you *now* want Git to track.  
+      - If you want Git to ignore a file that has already been tracked, use `git rm --cached file` (replace `file` by the name of the file) and then *commit* this change. Similarly, if you want Git to ignore an entire directory, use `git rm -r --cached dir` (replace `dir` with the name of the directory) and then commit this change.   
 
 `git diff` : shows the changes you have done *locally* (compared to the last version that was **committed**) but you have **not added** to the *staging area*.
 
