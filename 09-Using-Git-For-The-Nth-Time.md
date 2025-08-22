@@ -14,9 +14,9 @@ The overall workflow when working by yourself on a code project should be the fo
     * **Add** the file you are modifying using `git add` and the respective file name.  
     * After every relevant change, **commit** it using `git commit -m "commit_message"` where `"commit_message"` is a short message describing what the change is about. Git then stores the change permanently in the hidden directory `.git/`  
     * After committing, **push** the commit to the *remote main* branch doing `git push origin main`. 
-    * Repeat the **adding** and **committing** how many times necessary. See [this diagram](uploads/undo_diagram.png) in case you need to un-stage changes and/or un-do commits.    
+    * Repeat the **adding** and **committing** how many times necessary. See [this diagram](https://github.com/HeatherAn/recommended-coding-practices/blob/main/figures/fig_git-undo.jpg) in case you need to un-stage changes and/or un-do commits.    
 
-If you are developing the code in collaboration with others, you will need to pull and push more often and pay attention to which branches you have to commit to. See more in [Using Git With Branches](https://github.com/HeatherAn/recommended-coding-practices/blob/main/10-Using-Git-With-Branches.md) section. 
+If you are developing the code in collaboration with others, you will need to *pull* and *push* more often and pay attention to which branches you have to commit to. See more in [Using Git With Branches](https://github.com/HeatherAn/recommended-coding-practices/blob/main/10-Using-Git-With-Branches.md) section. 
 
 
 ## Other useful commands 
@@ -28,14 +28,17 @@ _____________________________
 ### Important to keep in mind: Git is smart!
 
 You can move within repositories in your *local* work laptop/station and in each one (if you initialized them accordingly and set the respective **origin** correctly) Git will identify *which* is the respective **origin**. For example, let us say you have:   
+
 - Directory `dir1` (in your work laptop/station) where Git has been *initialized* and the **origin** has been defined as `remote1` (that refers to **Remote1** repository in the Github).  
-- Directory `dir2` (in your work laptop/station) where Git has been *initialized* and the **origin** has been defined as `remote2` (that refers to **Remote2** repository in the Github).
+- Directory `dir2` (in your work laptop/station) where Git has been *initialized* and the **origin** has been defined as `remote2` (that refers to  **Remote2** repository in the Github).  
 - You go to `dir1` and do `git remote -v`, you will see that it recognizes the **origin** as `remote1`.  
 - If you then go to `dir2` and do `git remote -v`, you will see that it recognizes the **origin** as `remote2`.   
 _____________________________
 
 `git diff id_commit1 id_commit2` : where `id_commit1` and `id_commit2` would be the **unique identifiers** of the commits (that can be seen with `git log`). This will show the difference between the two versions of the file (when `id_commit1` was committed and `id_commit2` was committed).  
-- The `diff` command is a very powerful one. For all information about `git diff` do: `git diff --help` (it opens the help page in a browser).   
+
+- The `diff` command is a very powerful one. For all information about `git diff` do: `git diff --help` (it opens the help page in a browser).    
+
 - Check out [this video](https://youtu.be/Wk-IK2uJt28) where the presenter talks about `git diff` and configuring the `diff.tool` global Git configuration variable to visualize the difference between two version using the `vimdiff` tool (by using the `difftool` command). A few remarks about the video:
     * The presenter in this case is working in a Linux system (that is why he uses `man` as a help command) and he is using `vim` as his default editor (see about global Git configuration in [Setting up Git](https://github.com/HeatherAn/recommended-coding-practices/blob/main/07-Setting-Up-Git.md) section).  
     * The presenter often talks about the **index**. If you go to the `./git` directory, you will see an `index` file which gets constantly updated. In very rough terms, the **index** helps Git "know" what is being **tracked** and what is **not being tracked but has been changed** in a Git repository. That is how Git can give you messages letting you know whenever you have made changes to a file that you have not added nor committed yet.  
