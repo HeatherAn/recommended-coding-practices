@@ -4,11 +4,11 @@ In this section we will cover **general principles and guidelines** to follow wh
 
 ## What are code conventions? 
 
-Code conventions are essentially guidelines on how to write and design code in a specific programming language. They can cover different topics ranging from code structure to embedded documentation rules, naming conventions, testing practices, etc. Depending on the language, some conventions can be more generic while others can be quite specific.
+Code conventions are essentially guidelines on how to write and design code in a specific programming language. They can cover different topics ranging from code structure to embedded documentation rules, naming conventions, testing practices, etc. Depending on the language, some conventions can be more generic while others can be more specific.
 
 ## Why the need for code writing conventions?
 
-Code conventions are meant to standardize the way code is developed in order to make it more *interoperable* and facilitate its *reuse* and *maintenance* by making it easily *readable* by others. 
+Code conventions are meant to standardize the way code is developed in order to make it more *interoperable* and facilitate its *re-use* and *maintenance*, making it easily *readable* by others. 
 
 ![phd031714s](uploads/764c24ac6fb977b2034fb69443960246/phd031714s.gif)
 
@@ -19,9 +19,10 @@ Code conventions are meant to standardize the way code is developed in order to 
 As mentioned before, there are different conventions for different programming languages. Different conventions cover different topics, and while some conventions are widely spread, others are less used. Thus there is *no single ring to rule them all!* But overall, there are certain principles that everyone can follow when writing code, regardless of the programming language they are using. 
 
 ______________________________________________________
+
 ### Important to keep in mind: Python PEPs
 
-One of the languages for which more conventions have been agreed by the community is Python. These conventions are proposed and established by the so-called [Python Enhancement Proposals](https://www.python.org/dev/peps/) (PEPs). There are different types of PEPs, some of them are for describing new features or implementations of Python, and others are meant to provide guidelines for Python users and developers. Among all the PEPs there are we encourage you to take a look at [PEP 8](https://www.python.org/dev/peps/pep-0008/) which is the style guide for Python code, and [PEP 7](https://www.python.org/dev/peps/pep-0007/) which is a coding convention for the C code comprising the C implementation of Python. 
+One of the languages for which more conventions have been agreed by the community is Python. These conventions are proposed and established by the so-called [Python Enhancement Proposals](https://www.python.org/dev/peps/) (PEPs). There are different types of PEPs, some of them are for describing new features or implementations of Python, and others are meant to provide guidelines for Python users and developers. Among all the PEPs, we encourage you to take a look at [PEP 8](https://www.python.org/dev/peps/pep-0008/) which is the style guide for Python code, and [PEP 7](https://www.python.org/dev/peps/pep-0007/) which is a coding convention for the C code comprising the C implementation of Python. 
 
 ______________________________________________________
 
@@ -67,7 +68,7 @@ In the following sections we will see these one by one.
 
 ________________________
 
-[Previous : 09 - Project Structure](https://github.com/HeatherAn/recommended-coding-practices/blob/main/09-Project-Structure.md)  
-[Next : 11 - Keep It Simple](https://github.com/HeatherAn/recommended-coding-practices/blob/main/11-Keep-It-Simple.md)  
+[Previous : 14 - Project Structure](https://github.com/HeatherAn/recommended-coding-practices/blob/main/14-Project-Structure.md)  
+[Next : 16 - Keep It Simple](https://github.com/HeatherAn/recommended-coding-practices/blob/main/16-Keep-It-Simple.md)  
 
 [Go back to README](https://github.com/HeatherAn/recommended-coding-practices#readme)
