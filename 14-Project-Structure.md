@@ -71,7 +71,7 @@ Image by [Peggy und Marco Lachmann-Anke](https://pixabay.com/users/peggy_marco-1
 
 ## Notebook
 
-A notebook is where you can document examples on **how to use** the code presented in the repository. Tools like [**Jupyter notebooks**](https://jupyter.org/) and [**Quarto**](https://quarto.org/) allow you to create notebooks where you can add **formulae/text/images/weblinks** (in markdown language but also Latex!), and you can write/run **code** (written in Python, R, [C++](https://blog.jupyter.org/interactive-workflows-for-c-with-jupyter-fe9b54227d92), even [MATLAB](https://am111.readthedocs.io/en/latest/jmatlab_use.html)). MATLAB also allows you to have notebooks in its **Live Editor**. All of these are excellent tools for reproducibility! Great for your future self and for the reusers!
+A notebook is where you can document examples on **how to use** the code presented in the repository. Tools like [**Jupyter notebooks**](https://jupyter.org/) and [**Quarto**](https://quarto.org/) allow you to create notebooks where you can add **formulae/text/images/weblinks** (in markdown language but also Latex!), and you can write/run **code** (written in Python, R, [C++](https://blog.jupyter.org/interactive-workflows-for-c-with-jupyter-fe9b54227d92), etc.). Nowadays MATLAB also allows you to have computational notebooks within in its **Live Editor**. All of these are excellent tools for reproducibility! Great for your future self and for the re-users!
 
 Interested in Jupyter notebooks? See examples [here](https://github.com/Hvass-Labs/TensorFlow-Tutorials). There the [developer](https://github.com/Hvass-Labs) has created several Jupyter notebooks (`.ipynb`) with tutorials on Data Science algorithms using [Tensorflow](https://www.tensorflow.org/). Even though they are *tutorials* on methodology, you can see how the notebooks look like! Also notice that all these tutorials have been shared with the community under an [open-source license](https://github.com/Hvass-Labs/TensorFlow-Tutorials/blob/master/LICENSE).  
 
@@ -108,7 +108,7 @@ As mentioned before, within the `data` folder, there should be a sub-folder cont
 
 ### Important to keep in mind: use `git ignore` for data!
 
-A Github repository is **not a data repository**. Keep the data in your *local* repository (in your laptop/workstation). Work *locally*, and when *pushing* the changes to the online *remote* Github repository, use a `.gitignore` file to **ignore the data files**. See more on `.gitignore` in the  [Using Git For The First Time](https://github.com/HeatherAn/recommended-coding-practices/blob/main/08-Using-Git-For-The-First-Time.md) section.  
+A Github repository is **not a data repository**. Keep the data in your *local* repository (in your laptop/workstation). Work *locally*, and when *pushing* the changes to the online *remote* Github repository, use a `.gitignore` file to **ignore the data files**. See more on `.gitignore` in the  [Using Git For The First Time](https://github.com/HeatherAn/recommended-coding-practices/blob/main/08-Using-Git-For-The-First-Time.md#more-git-commands) section.  
 
 _________________________________
 
@@ -147,11 +147,11 @@ Now explore it! If you do `ls -a` to see hidden files/directories, you will see 
 
 Notice there is a **top-level README** file, a **LICENSE** file, a `data/` directory and a `notebook/` directory. Notice that in `.gitignore` file it is established that when using Git, Git should ignore the `data` folder and everything in it.
 
-Check more about the Data Science cookiecutter template [here](https://github.com/drivendata/cookiecutter-data-science). Not the template for your project? [There are more!](http://cookiecutter-templates.sebastianruml.name/) They are spread everywhere, but Google or ChatGPT is always your friend to find them! Even if you do not find one that applies exactly to your project, you can start from a template that is close to the one you need, and you can then modify it accordingly (using Bash).
+Check more about the Data Science cookiecutter template [here](https://github.com/drivendata/cookiecutter-data-science). Not the template for your project? There are many more! They are spread everywhere. Even if you do not find one that applies exactly to your project, you can start from a template that is close to the one you need, and you can then modify it accordingly (using Bash).
 
 ## Pushing your Structured Project to Github
 
-Now that you have created a proper project structure *locally*, *push* it to a Github repository. Don't remember how to *push*? Check the [Using Git For The First Time](https://github.com/HeatherAn/recommended-coding-practices/blob/main/08-Using-Git-For-The-First-Time.md) section and/or the [Git Cheatsheet](https://github.com/HeatherAn/recommended-coding-practices/blob/main/13-Git-Cheatsheet.md)    
+Now that you have created a proper project structure *locally*, *push* it to a Github repository. Don't remember how to *push*? Check the [Using Git For The First Time](https://github.com/HeatherAn/recommended-coding-practices/blob/main/08-Using-Git-For-The-First-Time.md#push-to-the-remote) section and/or the [Git Cheatsheet](https://github.com/HeatherAn/recommended-coding-practices/blob/main/13-Git-Cheatsheet.md)    
 
 You can now start working within the project structure, **pulling**, **adding**, **committing** and **pushing** changes, syncing the *local* repository with the respective *remote* Github repository.
 
