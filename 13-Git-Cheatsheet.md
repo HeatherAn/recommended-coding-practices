@@ -3,16 +3,23 @@
 ## Configuration
 
 `git config --global user.name "your name"` : set your user name for all your repositories as a user.  
+
 `git config --global user.email "your email address"` : set your email for all your repositories as a user.      
+
 `git config --local user.name "your name"` : set your user name for the repository you are in.  
+
 `git config --global core.editor “name editor“` : set the default text editor. For example:    
+
     - For **Kate** (Linux):  `git config --global core.editor "kate"`  
     - For **Gedit** (Linux, Windows):  `git config --global core.editor "gedit --wait --new-window"`   
     - For **Vim** (all): `git config --global core.editor "vim"`  
     - For **VSCode** (all): `git config --global core.editor "code --wait"`  
     - For **Emacs** (all):  `git config --global core.editor "emacs"`    
+
 `git config --system --list` :  list the `--system` settings which apply to every user on the system/device and all their repositories.  
+
 `git config --global --list` : list the `--global` settings that are stated in the `~/.gitconfig` file (or `~/.config/git/config` file if applicable) and that specify settings for all the repositories you have as a user.  
+
 `git config --local --list` : list the `--local` settings that are stated in the `./.git/config` file and that specify settings for the specific repository you are in.   
 
 ## Repository basics
