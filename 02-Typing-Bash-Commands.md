@@ -29,6 +29,7 @@ ___________________________________________________________
 - **Root directory**: This is the directory that **holds everything in your computer**. You can also refer to this directory by using the slash character `/`. Inside the **root directory** there are several directories. Depending on your operating system you will find: `bin` (where some built-in programs are stored), `Users` or `usr` (where users’ personal directories –incl. yours– are located), `tmp` (where temporary files are stored), etc. Try it out and -wherever you are- type `cd /` in the terminal. This will automatically *take* you to the **root directory**. If you now type `ls`, all contents of the **root directory** will be printed in the terminal.  
 
 - **Home directory**. This is where your **personal directories** are located (where all your files -as a **user** of the device- are). On Windows the path of your home directory will look like this: `/c/Users/your_user_name`. In other operating systems, the home directory path will look different (for example, on Linux it may look like `/home/your_user_name`).  
+
     Do you want to see what your **home directory** has? Wherever you are type in the terminal `cd` alone (do not forget to press **Enter** to execute the command). This automatically *takes* you to the **home directory**. If you now type `ls`, all contents of the **root directory** will be printed in the terminal.  
 ___________________________________________________________
 
@@ -39,12 +40,13 @@ Remember that we are using the terminal to **navigate through directories and fi
 
 Try typing the following commands (do not forget to always press the **Enter** key to execute each instruction).
 
-`cd` : Wherever you are, this command (written alone) takes you to your **home directory**.  
+    `cd` : Wherever you are, this command (written alone) takes you to your **home directory**.  
 
-`cd path_dir` :  (replace `path_dir` by the path of any directory within the device) this instruction will take you from your *current directory* (the directory where you are) to the `path_dir` directory. When specifying the path to a directory keep in mind whether you are providing a **relative path** or an **absolute path**.
-    - The **relative path** of a directory/file specifies a **location starting from the *current* location**.   
+    `cd path_dir` :  (replace `path_dir` by the path of any directory within the device) this instruction will take you from your *current directory* (the directory where you are) to the `path_dir` directory. When specifying the path to a directory keep in mind whether you are providing a **relative path** or an **absolute path**.
+    
+        - The **relative path** of a directory/file specifies a **location starting from the *current* location**. 
         For example: consider *you are* in your **home directory** (`/c/Users/your_user_name`) which contains a `Downloads` directory. If you want to *go* to `Downloads` then you can do: `cd Downloads`. If you now do `pwd`, you will see you are in `/c/Users/your_user_name/Downloads`.  
-    - The **absolute path** of a directory/file specifies a **location from the *root directory* of the file system** (from `/`).   
+        - The **absolute path** of a directory/file specifies a **location from the *root directory* of the file system** (from `/`). 
         For example: consider your **home directory** (`/c/Users/your_user_name`) which contains a `Documents` directory and a `Downloads` directory. Inside `Documents` there is a `data` folder. Let's say *you are* in `/c/Users/your_user_name/Documents/data` and you want to move to the `Downloads` directory. Then one way of going there would be using the **absolute path** to `Downloads` by typing: `cd /c/Users/your_user_name/Downloads` (see we are starting from `/`).  
 
 ___________________________________________________________
@@ -59,10 +61,10 @@ So when is the `~` necessary then? When you want to indicate the **absolute path
 ___________________________________________________________
 
 
-`cd ..` : when typing `..` bash understands “the directory containing this one”, or in other words, the **parent directory** of the **current directory**.
+    `cd ..` : when typing `..` bash understands “the directory containing this one”, or in other words, the **parent directory** of the **current directory**.
     **Special comment**: when typing `.` (only one dot) bash understands “the current directory”. Thus, typing `cd .` will not "move" you from your current directory. 
 
-`cd -` : when typing `-` bash understands "the previous directory you were in".   
+    `cd -` : when typing `-` bash understands "the previous directory you were in".   
     For example: let's say *you are* in `/c/Users/your_user_name/dir1`. Then you go directly to another directory called `/dir2` by doing `cd /c/Users/your_user_name/dir2` (that is, by using the **absolute path** to `dir2`). Then doing `cd ..` will take you to `/c/Users/your_user_name`, while doing `cd -` will take you to `/c/Users/your_user_name/dir1`.
 
 __________________________________________________________________
