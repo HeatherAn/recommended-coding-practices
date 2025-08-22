@@ -56,7 +56,7 @@ The material has re-used part of the content provided by open sources such as th
 
 Found an error? 🐛 or would like to make a suggestion? 💡 Feel free to open an issue! 
 
-Want to improve the content? 💻 You are more than welcome to do so! Feel free to fork the repo and submit a **pull request**. Do you need a reminder on how to fork? Check out the forking material [here](https://github.com/HeatherAn/recommended-coding-practices/blob/main/12-Cloning-and-Forking.md).   
+Want to improve the content? 💻 You are more than welcome to do so! Feel free to fork the repo and submit a **pull request**. Do you need a reminder on how to fork? Check out the forking material [here](https://github.com/HeatherAn/recommended-coding-practices/blob/main/12-Cloning-and-Forking.md) 😉 
 
 _________________________
 
