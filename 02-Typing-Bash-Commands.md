@@ -15,7 +15,7 @@ ____________________________
 All instructions given in this repository will be based on **Git Bash** (installed on Windows). But in general the instructions can be followed also for Linux and macOS operating systems (just consider paths and some commands may vary slightly).
 ____________________________
 
-# Location, location, location...
+## Location, location, location...
 
 When the terminal opens, it opens *at a specific location* within the device. To see *where* you are (in which directory you are), use the **print working directory** `pwd` command. When typing `pwd` and pressing the **Enter** key, the *current* directory (the directory you are in) will be printed in the terminal.
 
@@ -34,7 +34,7 @@ ___________________________________________________________
 ___________________________________________________________
 
  
-# To move around: `cd` Command
+## To move around: `cd` Command
 
 Remember that we are using the terminal to **navigate through directories and files** within the device, instead of going through the directories with **Windows Explorer** or the **Finder** in macOS systems for example. So **instead of clicking things, we will be typing instructions**  through the command line!
 
@@ -80,7 +80,7 @@ __________________________________________________________________
 - When working with the terminal, you might want to clear the screen once in a while. For this you can use the `clear` command. This command (alone) clears the screen of the terminal, leaving the prompt at the top of the terminal. It does not erase anything, and it does not *take* you anywhere else.
 ___________________________________________________________
 
-# To list content of directories : `ls` Command 
+## To list content of directories : `ls` Command 
  
 `ls` : this command (alone) lists the (non-hidden) contents of the *current* directory.
 
@@ -103,7 +103,7 @@ ___________________________________________________________
 As you can see with `ls`, there are extra options that you can specify when using the command. This is not only for the `ls` command. Most commands take so-called **flags** (options) which begin with a (dash) `-`. These flags can usually be combined. For example: `ls -lh` is the same as `ls –l –h`.  
 ___________________________________________________________
  
-# To create directories : `mkdir` Command 
+## To create directories : `mkdir` Command 
 
 `mkdir name_dir` : make (create) directory called `name_dir`. Replace `name_dir` by the name of the directory to be created within the **current directory**, or it can be the **absolute path** with the name of the new directory. 
     For example: let's say *you are* in `/c/Users/your_user_name/dir1`. Then you can create a sub-directory called `sub_dir1` within `dir1` by doing `mkdir sub_dir1`.  
@@ -118,12 +118,12 @@ ___________________________________________________________
 Do not use white spaces for names of files and directories. Use `_` instead. This will facilitate a lot the writing of paths.
 ___________________________________________________________
 
-# To create an empty file: `touch` Command 
+## To create an empty file: `touch` Command 
 
 `touch my_file` : creates an empty file in the *current* directory (replace `my_file` with the name of the file -it can include its path- you want to create).  
     For example: you want to create a `README.txt` or `script.py` file, then you type `touch README.txt` or `touch script.py` respectively.
 
-## Do you want to edit the file? 
+### Do you want to edit the file? 
 
 You can start editing a file (any text type of file) by using:  
 
@@ -150,7 +150,7 @@ The `echo` commands prints whatever you write next to it to the terminal.
 
 ___________________________________________________________
 
-# To move (or rename) files : `mv` Command 
+## To move (or rename) files : `mv` Command 
 
 `mv file1 dir1` : when the first argument is a *file* and the second argument is a *directory*, `mv` moves the *file* to that *directory*. You can provide the name of the file (if the file is in the *current* directory) or the path of the file (if the file is in another directory).
     For example: let's say *you are* in `/c/Users/your_user_name/dir1` and you want to move a PDF file called `file1.pdf` (that is in the *current* directory) to the `/c/Users/your_user_name/dir2` directory. Then you can type: `mv file1.pdf /c/Users/your_user_name/dir2`, or more effectively: `mv file1.pdf ../dir2`  
@@ -166,7 +166,7 @@ Keep in mind `mv` will **silently overwrite any existing file**. A recommended o
 
 ___________________________________________________________
 
-# To copy files : `cp` Command 
+## To copy files : `cp` Command 
 
 `cp file1 file2` : copies the file given as a first argument to the file given as the second argument (here you should replace `file1` by the name of the file you want to make a copy of, and `file2` by name of the file you want to be the copy of `file1`). Both files can also be given as paths to the respective files. For example: `cp /c/Users/your_user_name/file1 /c/Users/your_user_name/file2`.
 
@@ -178,7 +178,7 @@ For copying a directory and all its contents you can use the recursive flag `-r`
 
 ___________________________________________________________
 
-# To delete files/directories : `rm` Command 
+## To delete files/directories : `rm` Command 
 
 `rm file1` : deletes a file (replace `file1` by the file you want to delete). **Be aware this command deletes the file FOR-E-VER. So be careful!**
 
@@ -200,7 +200,7 @@ When copying/moving/deleting a lot of files/directories at once: use **wildcards
 
 ___________________________________________________________  
 
-# To find strings/files/directories : `find` and `grep` Commands
+## To find strings/files/directories : `find` and `grep` Commands
 
 The `find` command helps you find files or directories anywhere in your device. The `grep` command instead is used to find strings in files.  
 
@@ -214,7 +214,7 @@ The `find` command helps you find files or directories anywhere in your device. 
 
 ___________________________________________________________  
 
-# To look through the history : `history` Command - BONUS piping!
+## To look through the history : `history` Command - BONUS piping!
 
 Sometimes it is useful to look through the history of commands within the *current* Shell session and/or previous Shell sessions.  
 
