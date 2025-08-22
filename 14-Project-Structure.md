@@ -11,9 +11,8 @@ As a rule-of-thumb a proper directory structure should have as a minimum the fol
 - **README** file  
 - **LICENSE** file  
 - **notebook**  
-- **data** folder   
-- **code** folder (often named `src`) 
-- static copy of the **raw (original) data**  
+- **data** folder (with a static copy of the **raw (original) data**)  
+- **code** folder (often named `src`)   
 ____________________________________________________________
 
 ![white-male-1871436_1920](uploads/7ba5ab15e6eb1c16988da7f373521436/white-male-1871436_1920.jpg)
@@ -93,78 +92,31 @@ Image by [Peggy und Marco Lachmann-Anke](https://pixabay.com/users/peggy_marco-1
 
 ## Data
 
-In every project there is data. In coding projects, data is used to e.g., build/test and run the code. Thus, when developing code for further reuse, you will need data to showcase *how* the code works (which, as mentioned before, can be exemplified in a notebook). Hence, there should always be a `data` folder with sub-folders containing -in general- the:  
+In every project there is data. In coding projects, data is used to e.g., build/test and run the code. Hence, there should always be a `data` folder with sub-folders containing -in general- the:  
 
-- **raw original** data  
+- **raw original** data;   
+- **input** data to the code (e.g., processed/data-engineered data);   
+- **auxiliary** data (e.g., data files containing fixed settings/parameters so that the code can function);   
+- **output** data of the code.   
 
-- **input** data (which is a copy or derived version of the raw original data, that is given as *input* to the code)   
-
-- **auxiliary** data (which is data that is fixed, containing settings/parameters/assumptions so that the code can function)  
-
-- **output** data (which is the data that is created by the code)  
-
-_____________________________________________________
+___________________________________
 
 
 ![computer-1015304_1920](uploads/987f103c0a3706cf39d8dc5bcf49bbdf/computer-1015304_1920.jpg)
 
 Image by [Peggy und Marco Lachmann-Anke](https://pixabay.com/users/peggy_marco-1553824/?utm_source=link-attribution&amp;utm_medium=referral&amp;utm_campaign=image&amp;utm_content=1015304) from [Pixabay](https://pixabay.com/?utm_source=link-attribution&amp;utm_medium=referral&amp;utm_campaign=image&amp;utm_content=1015304)
 
-## Static Copy of Original Data
+### Static Copy of Raw Original Data
 
-As mentioned before, within the `data` folder, there should be a sub-folder containing the **raw data**, which should remain **intact**. The raw data that will be given to the code will be a copy of this raw data (the **input data** mentioned above), so that the raw data does not disappear during the development of the code. If the data was obtained from an online database/archive, then you should keep the reference to it in the **README** file and in the **notebook**. You can also provide instructions on how to download it. For example, by providing a **Bash script** where you use the `wget` command showing reusers how to retrieve files via the command line using HTTP, HTTPS, and FTP protocols (see more about `wget` [here](https://www.gnu.org/software/wget/)).  
+As mentioned before, within the `data` folder, there should be a sub-folder containing the **raw data**, which should remain **intact** even if it is given as input to the code *as it is* (i.e., without any processing). If the data was obtained from an online database/archive, then you should keep the reference to it in the **README** file and in the **notebook**. You can also provide instructions on how to download it. For example, by providing a **Bash script** where you use the `wget` command showing re-users how to retrieve files via the command line using HTTP, HTTPS, and FTP protocols (see more about `wget` [here](https://www.gnu.org/software/wget/)) and in the [Bash Cheatsheet](https://github.com/HeatherAn/recommended-coding-practices/blob/main/05-Bash-Cheatsheet.md).  
 
 ### Important to keep in mind: use `git ignore` for data!
 
-A Github repository is **not a data repository**. Keep the data in your *local* repository (in your work laptop/station). Work *locally*, and when *pushing* the changes to the online *remote* Github repository, use `git ignore` to **ignore the data files**. To do this:  
-
-- create a file in the directory of the project (where Git has been initialized). Call this file: `.gitignore` (it is a hidden file). You can create it via the terminal by typing: `touch .gitignore`  
-
-- add in that file the name of each file and/or directory you want Git to ignore. For example, if you want Git to ignore all files with `csv` extension that can be found in the *current* directory, and all files inside a sub-directory called `data`. Then the file `.gitignore` would look like this:
-
-   `*.csv`  
-   `data/`  
-
-- *add* and *commit* the file `.gitignore` by typing in your terminal:  
-
-   `git add .gitignore`  
-
-   `git commit -m "Ignore all csv files and data sub-folder"`  
-
-__________________________________
-### Parenthesis on `git ignore`
-
-- If for some reason you would like git to track a file that is included in .gitignore, you can then *add* the file to the **staging area** by using the `f` flag, forcing Git to consider it:  
-
-   `git add -f file_to_add` : where `file_to_add` would be the file that is in `.gitignore`, but you *now* want Git to track.  
-
-- If you want to see what files or directories are being ignored by Git, use `git status --ignored`  
-
-- If you want Git to ignore all files with a given extension **except one file**, you can use the `!` symbol. For example: let's say you tell Git to ignore all files with `csv` extension except for `register_total.csv`. Then `.gitignore` file should look like this:
-
-   `*.csv`  
-   `!register_total.csv`  
-
-- A bit of advice on **what kind of files** should be ignored:  
-
-    - log files  
-
-    - files with (API) keys/credentials  
-
-    - files with sensitive information (especially if the project is shared with others)  
-
-    - system files like `Desktop.ini` in Windows, `.DS_Store` on macOS, etc.   
-
-
-- In [gitignore.io](https://www.toptal.com/developers/gitignore) you can find other type of files that are recommended to be ignored by Git depending on your operating system, IDE or programming language.  
-
-- You can also include comments in `.gitignore` files, in case you want to provide more documentation about the files that are being ignored. The lines (in the `.gitignore` file)  starting with `#` symbol, are considered as *comments*.  
-
-- Keep in mind Git will not ignore the file if it is already tracking it. If you want Git to ignore a file that has already been tracked, use `git rm --cached <filename>` and then commit this change. Similarly, if you want Git to ignore an entire directory, use `git rm -r --cached <folder>` and then commit this change.  
+A Github repository is **not a data repository**. Keep the data in your *local* repository (in your laptop/workstation). Work *locally*, and when *pushing* the changes to the online *remote* Github repository, use a `.gitignore` file to **ignore the data files**. See more on `.gitignore` in the  [Using Git For The First Time](https://github.com/HeatherAn/recommended-coding-practices/blob/main/08-Using-Git-For-The-First-Time.md) section.  
 
 _________________________________
 
-# Using Project Templates
+## Using Project Templates
 
 A recommended tool for creating a proper project structure is to use **project templates**. One of these tools is the famous [Cookiecutter](https://cookiecutter.readthedocs.io/en/latest/README.html). Even though you need Python to install **Cookiecutter**, you do not have to know Python to use **Cookiecutter**. Once you run a **Cookiecutter** template, the project structure is created in your working directory. You can then proceed to code in whichever language you want/have-to.
 
