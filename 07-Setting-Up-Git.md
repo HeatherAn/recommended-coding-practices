@@ -97,7 +97,7 @@ __________________________
 
 ## The origin
 
-As mentioned before, you will be working *locally* on your files in your *local* Git repository (in the *local* **main** branch). You will sync this *local* repository with a *remote* Github repository which we will call **Project Y**. This *remote* repository will be *locally* recognized by Git as the famous **origin**. In that way, Git "knows" to which *remote* **origin** (Github repository) the *local* changes should be synced to.
+As mentioned before, you will be working *locally* on your files in your *local* Git repository (in the *local* **main** branch). You will sync this *local* repository with a *remote* Github repository which we will call **Project_Y**. This *remote* repository will be *locally* recognized by Git as the famous **origin**. In that way, Git "knows" to which *remote* **origin** (Github repository) the *local* changes should be synced to.
 
 The **origin** will also have its own **main** branch by default. Thus when looking at the *remote* branches of your project via the terminal, you will see it as the **remotes/origin/main** branch.
 
@@ -105,7 +105,7 @@ The **origin** will also have its own **main** branch by default. Thus when look
 
 - You will have a *local* Git repository, created by typing `git init` in a working directory (in your device). This will create the *local* **master** branch by default. Since you will be working with Github, you need to rename this *local* **master** branch as **main** by using `git branch -M main`.  
 
-- You will have a *remote* Git repository in Github (the **Project Y** in Github). This *remote* repository also has a **main** branch (created by default when the repository is created in Github). This **main** branch is recognized by your *local* Git repository as the **remotes/origin/main**.   
+- You will have a *remote* Git repository in Github (the **Project_Y** in Github). This *remote* repository also has a **main** branch (created by default when the repository is created in Github). This **main** branch is recognized by your *local* Git repository as the **remotes/origin/main**.   
 
 - You will be making changes to your files *locally*. To "synchronize" the *remote* repository with all the changes you make *locally*, you will be *pushing* the changes to the *remote* repository. Likewise, if changes are made directly via the Github, you will be *pulling* those changes to your *local* repository, before start working *locally* on your files.   
 
