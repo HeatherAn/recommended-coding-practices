@@ -19,14 +19,12 @@ For Python:
 
 - [autopep8](https://pypi.org/project/autopep8/)
 
-- [Yet Another Python Formatter YAPF](https://github.com/google/yapf)
-
-- [PEP8 Online](http://pep8online.com/)
+- [Yet Another Python Formatter YAPF](https://github.com/google/yapf)  
 
 
 For other languages:
 
-- [Code Beautifier](https://codebeautify.org)
+- [Code Beautify](https://codebeautify.org)
 
 
 ## Other Useful References
@@ -61,7 +59,7 @@ MATLAB standard:
 
 ## Using LLMs to format the Code
 
-Nowadays you might find more useful to use AI Apps to help you with the *formatting*, *writing documentation*, *debugging*, etc. This is ok as long as you are aware that the suggested solutions come from models trained on open-source projects. This means that some of the solutions might look quite similar to the code of open-source projects. This is not necessarily troublesome, but you do have to pay attention to it. Specially if the solutions might come from open-source projects that are under not so open licenses. Then you might infring copyright for example.  
+Nowadays you might find more useful to use AI Apps to help you with the *formatting*, *writing documentation*, *debugging*, etc. This is ok as long as you are aware that the suggested solutions come from models trained on open-source projects. This means that some of the solutions might look quite similar to the code of open-source projects. This is not necessarily troublesome, but you do have to pay attention to it (e.g., not to infringe copyright).  
 
 ________________________
 
