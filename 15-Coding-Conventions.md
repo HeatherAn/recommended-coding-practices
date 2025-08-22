@@ -10,7 +10,7 @@ Code conventions are essentially guidelines on how to write and design code in a
 
 Code conventions are meant to standardize the way code is developed in order to make it more *interoperable* and facilitate its *re-use* and *maintenance*, making it easily *readable* by others. 
 
-![phd031714s](uploads/764c24ac6fb977b2034fb69443960246/phd031714s.gif)
+![fig_conventions](figures/fig_conventions.gif)
 
 [“Piled Higher and Deeper”](http://phdcomics.com/comics/archive.php?comicid=1690) by Jorge Cham, http://www.phdcomics.com
 
