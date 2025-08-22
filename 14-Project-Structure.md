@@ -23,17 +23,13 @@ Image by [Peggy und Marco Lachmann-Anke](https://pixabay.com/users/peggy_marco-1
 
 In every project there should be at least a **top-level README** file in a simple text format (e.g., `.txt` or `.md`). This means, a `README` file at the top of the directory structure of the project. 
 
-Generally speaking, the `README` file is where you must **document**: 
+Generally speaking, the `README` file is where you must **document**:   
 
-- what the code does  
-
-- how the code/repository is structured  
-
-- what is needed for the code to run (dependencies and versions of libraries with which the code has been developed)  
-
-- instructions on how to compile and run the code  
-
-- references and acknowledgements (this could also be in a separate directory within the repository)
+- what the code does;   
+- how the code/repository is structured;    
+- what is needed for the code to run (dependencies and versions of libraries with which the code has been developed);   
+- instructions on how to compile and run the code;   
+- references and acknowledgements (this could also be in a separate directory within the repository).  
 
 The `README` in a repository should be **understandable** not only by you (and your future self!), but also by others (especially if the repository becomes public or if it will be re-used/further-developed within your work group).   
 
