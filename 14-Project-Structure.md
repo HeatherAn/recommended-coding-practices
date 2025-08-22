@@ -143,7 +143,7 @@ Once you answer all those questions, **Cookiecutter** will create (in the curren
 
 ![DataScienceCookiecutter](uploads/51cbf1d43884211169a2359c2eccf8f6/DataScienceCookiecutter.png)
 
-Now xplore it! If you do `ls -a` to see hidden files/directories, you will see that a `.gitignore` file has already been created. Check it out!
+Now explore it! If you do `ls -a` to see hidden files/directories, you will see that a `.gitignore` file has already been created. Check it out!
 
 Notice there is a **top-level README** file, a **LICENSE** file, a `data/` directory and a `notebook/` directory. Notice that in `.gitignore` file it is established that when using Git, Git should ignore the `data` folder and everything in it.
 
