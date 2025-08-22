@@ -83,6 +83,10 @@ The following commands require extra installation in Windows. In order to instal
 
 ________________________
 
+Want to check some of the commands in more details? Go to [Typing Bash Commands](https://github.com/HeatherAn/recommended-coding-practices/blob/main/02-Typing-Bash-Commands.md) section.
+
+________________________
+
 [Previous : 04 - Aliases](https://github.com/HeatherAn/recommended-coding-practices/blob/main/04-Aliases.md)  
 [Next     : 06 - Version control with Git](https://github.com/HeatherAn/recommended-coding-practices/blob/main/06-Version-Control-With-Git.md)  
 
