@@ -157,7 +157,7 @@ Do you want to see more about how to refer to commits without writing the *hash*
  
 The following diagram shows the commands to undo the *adding* and the *committing*.  
 
-![fig_git-undo](figures/fig_git-undp.jpg)
+![fig_git-undo](figures/fig_git-undo.jpg)
 
 Keep in mind:  
 
