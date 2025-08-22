@@ -11,21 +11,21 @@ Let's say you are in `/c/Users/your_user_name/Documents/`, and the Github reposi
 
 ```
 cd /c/Users/your_user_name/Documents/
-git clone ssh_key
+git clone ssh_url
 ```
 
-The `ssh_key` will be of the form `git@github.com:<your_Github_user_name>/Project_X.git`. The **Project_X** repository will be cloned to `/c/Users/your_user_name/Documents/Project_X/`. 
+The `ssh_url` will be of the form `git@github.com:<your_Github_user_name>/Project_X.git`. The **Project_X** repository will be cloned to `/c/Users/your_user_name/Documents/Project_X/`. 
 
 ### Keep in mind
 
 - You will be able to see the history of commits (e.g. with `git log --oneline`) up to the point you cloned it. You will not have the commits there may be after that point in time.   
 - You can clone any public Github repository.  
-- You can clone only private Github repositories to which you have been invited to participate as a **Member**.  
-- When cloning a repository with `git clone`, Git defines as **origin** the repository with the `ssh_key` you provided, but you will not be able to **push** changes to that *remote* unless you have the permission to do so.  
+- You can clone only private Github repositories to which you have been invited to participate as a **Member** (or that you own).  
+- When cloning a repository with `git clone`, Git defines as **origin** the repository with the `ssh_url` you provided, but you will not be able to **push** changes to that *remote* unless you have the permission to do so.  
 
 ## Forking 
 
-Whenever you would like to contribute to an existing Github repository, usually authors will ask you to **create an issue first**; then **fork** their repo; work on whatever you want to contribute; and do a **pull request**. The authors can then review your contribution and see whether they want to integrate it into their repo or not. This is usually the process in which you would use the **forks**. In this section we will exemplify how to use forks within this scenario. But of course, **always check first the contribution guidelines of the repository**. 
+Whenever you would like to contribute to an existing Github repository, usually authors will ask you to **create an issue first**; then **fork** their repo; work on whatever you want to contribute; and do a **pull request**. The authors can then review your contribution and see whether they want to integrate it into their repo or not. This is usually the process in which you would use the **forks**. In this section we will exemplify how to use forks within this scenario. But of course, **always check first the contribution guidelines of the repository you want to contribute to**. 
 
 ### Create an issue first
 
@@ -35,7 +35,7 @@ Keep in mind some repos may ask you to follow a given numbering for the issue ti
 
 ### Fork the repository
 
-In order to fork the repository go to the Github repository's landing page and click on the **Fork** button in the top right part of the page. This will take you to a **Create a new fork** page. As mentioned in there, a **fork** is a copy of a repository that can be easily synced to stay updated with its latest commits, allowing you to experiment with it without affecting the original repository.  
+In order to fork the repository, go to the Github repository's landing page and click on the **Fork** button in the top right part of the page. This will take you to a **Create a new fork** page. As mentioned in there, a **fork** is a copy of a repository that can be easily synced to stay updated with its latest commits, allowing you to experiment with it without affecting the original repository.  
 
 Create the fork in e.g. your namespace (so that its url will start with: `https://github.com/<your_Github_user_name>`). Regarding the **Repository name**, just go for the suggested name Github displays. Click on the green **Create fork** button and the fork will be created. 
 
@@ -43,15 +43,15 @@ Create the fork in e.g. your namespace (so that its url will start with: `https:
 
 The recommended practice is always to first **clone** the fork repo to your local device, create a branch and work within that branch. 
 
-So first go to the fork repo that is in `https://github.com/<your_Github_user_name>/<name_repository>`, where `<name_repository>` is the name you specified in **Repository name** when creating the for (which is usually the same name as the original repository). Click on the green **Code** button and copy the ssh url to clipboard. Then in your local device in e.g. `/c/Users/your_user_name/Documents/` clone it:
+So first go to the fork repo that is in `https://github.com/<your_Github_user_name>/<name_repository>`, where `<name_repository>` is the name you specified in **Repository name** when creating the fork (which is usually the same name as the original repository). Click on the green **Code** button and copy the ssh url to clipboard. Then in your local device in e.g. `/c/Users/your_user_name/Documents/` clone it:
 
 ```
 cd /c/Users/your_user_name/Documents/
-git clone ssh_key
+git clone ssh_url
 cd name_project
 ```
 
-Where `ssh_key` is the url copied to clipboard (of the form `git@github.com:<your_Github_username>/<name_project>.git`), and `name_project` is the name of the directory that is created (same name as the Github repo you created the fork of).  
+Where `ssh_url` is the url copied to clipboard (of the form `git@github.com:<your_Github_username>/<name_project>.git`), and `name_project` is the name of the directory that is created (same name as the Github repo you created the fork of).  
 
 Now inside the cloned repo, inspect the history first, its branches, ensure the **origin** is well-defined, and create a branch e.g. called `feature_X` starting from the *local main* at the latest commit:  
 
@@ -64,15 +64,15 @@ git switch -c feature_X
 # start working on the files adding and committing to feature_X
 ```
 
-Work within `feature_X` adding the files and committing the relevant changes made to them. While doing so, always make sure your *local main* is up to date with whatever changes have been made in the original repo. For this go to your fork repo in Github (`https://github.com/<your_Github_user_name>/<name_repository>.git`). Whenever new commits have been made in the original repo, Github will let you know with a message saying `This branch is N commits behind ...`, where `N` is the number of new commits in the original repo that are not in your fork. In order to keep your fork updated just click on the `Sync fork` button, and **pull** again to your *local* fork repo (in `/c/Users/your_user_name/Documents/name_project/`). You may then need to e.g. do a `git rebase main` in `feature_X` to get those latest updates in your working branch `feature_X`.
+Work within `feature_X` adding the files and committing the relevant changes made to them. While doing so, always make sure your *local main* is up to date with whatever changes have been made in the original repo. For this go to your fork repo in Github (`https://github.com/<your_Github_user_name>/<name_repository>.git`). Whenever new commits have been made in the original repo, Github will let you know with a message saying `This branch is N commits behind ...`, where `N` is the number of new commits in the original repo that are not in your fork. In order to keep your fork updated, just click on the `Sync fork` button, and **pull** again to your *local* fork repo (in `/c/Users/your_user_name/Documents/name_project/`). You may then need to e.g. do a `git rebase main` in `feature_X` to get those latest updates in your working branch `feature_X` (see [Merging Or Rebasing Branches](https://github.com/HeatherAn/recommended-coding-practices/blob/main/11-Merging-Or-Rebasing-Branches.md#merging-without-conflicts) section).  
 
-Once you have tested and finished your contribution, **push** those changes to your fork repo (the **origin** will be `git@github.com:<your_Github_username>/<name_project>.git`). You will not push to the original repo. You will push to the fork you created in your namespace:
+Once you have tested and finished your contribution, **push** those changes to your fork repo (the **origin** will be `git@github.com:<your_Github_user_name>/<name_project>.git`). You will not push to the original repo. You will push to the fork you created in your namespace:
 
 ```
 git push origin feature_X
 ```
 
-Keep in mind the *local main* of your (local) fork repo remains intact.
+Keep in mind the *local main* and the *remote main* of your fork repo remain intact.
 
 ### Do a pull request
 
@@ -80,6 +80,11 @@ Go to your fork repo in Github (`https://github.com/<your_Github_user_name>/<nam
 
 If your pull request is accepted, you will get a notification. It could also be the case the authors/reviewers would like to discuss extra aspects with you via the issue chat. 
 
+______________________
+
+### Parenthesis
+
+In Gitlab a **pull request** is called a **merge request**. The procedure here recommended is also applicable to Gitlab.  
 ______________________
 
 [Previous : 11 - Merging Or Rebasing Branches](https://github.com/HeatherAn/recommended-coding-practices/blob/main/11-Merging-Or-Rebasing-Branches.md)  
