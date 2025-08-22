@@ -59,9 +59,13 @@ MATLAB standard:
 - [MATLAB Style Guideline Cheatsheet](https://nl.mathworks.com/matlabcentral/fileexchange/45047-matlab-style-guidelines-cheat-sheet)  
 
 
+## Using LLMs to format the Code
+
+Nowadays you might find more useful to use AI Apps to help you with the *formatting*, *writing documentation*, *debugging*, etc. This is ok as long as you are aware that the suggested solutions come from models trained on open-source projects. This means that some of the solutions might look quite similar to the code of open-source projects. This is not necessarily troublesome, but you do have to pay attention to it. Specially if the solutions might come from open-source projects that are under not so open licenses. Then you might infring copyright for example.  
+
 ________________________
 
-[Previous : 15 - Code Documentation](https://github.com/HeatherAn/recommended-coding-practices/blob/main/15-Code-Documentation.md)  
-[Next : 17 - Publish Or Archive](https://github.com/HeatherAn/recommended-coding-practices/blob/main/17-Publish-Or-Archive.md)  
+[Previous : 20 - Code Documentation](https://github.com/HeatherAn/recommended-coding-practices/blob/main/20-Code-Documentation.md)  
+[Next : 22 - Publish Or Archive](https://github.com/HeatherAn/recommended-coding-practices/blob/main/22-Publish-Or-Archive.md)  
 
 [Go back to README](https://github.com/HeatherAn/recommended-coding-practices#readme)
