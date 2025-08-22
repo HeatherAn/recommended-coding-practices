@@ -45,6 +45,7 @@ Try typing the following commands (do not forget to always press the **Enter** k
 `cd path_dir` :  (replace `path_dir` by the path of any directory within the device) this instruction will take you from your *current directory* (the directory where you are) to the `path_dir` directory. When specifying the path to a directory keep in mind whether you are providing a **relative path** or an **absolute path**.  
 
 - The **relative path** of a directory/file specifies a **location starting from the *current* location**. For example: consider *you are* in your **home directory** (`/c/Users/your_user_name`) which contains a `Downloads` directory. If you want to *go* to `Downloads` then you can do: `cd Downloads`. If you now do `pwd`, you will see you are in `/c/Users/your_user_name/Downloads`.   
+
 - The **absolute path** of a directory/file specifies a **location from the *root directory* of the file system** (from `/`). For example: consider your **home directory** (`/c/Users/your_user_name`) which contains a `Documents` directory and a `Downloads` directory. Inside `Documents` there is a `data` folder. Let's say *you are* in `/c/Users/your_user_name/Documents/data` and you want to move to the `Downloads` directory. Then one way of going there would be using the **absolute path** to `Downloads` by typing: `cd /c/Users/your_user_name/Downloads` (see we are starting from `/`).  
 
 ___________________________________________________________
