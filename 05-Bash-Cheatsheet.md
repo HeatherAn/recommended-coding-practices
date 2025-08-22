@@ -10,15 +10,21 @@ Wildcard `?` : this wildcard matches exactly one character.
 
 `pwd` : prints the *current* directory (i.e. the directory you are in).  
 
-`cd` : takes you to your *home* directory.   
-    `cd /` : takes you to the *root* directory.  
-    `cd ..` : takes you to the *parent* directory of the *current* directory.  
-    `cd -` : takes you to the previous directory you were in.   
-    `cd dir1` : takes you from your *current* directory to the `dir1` directory.  
+`cd` : takes you to your *home* directory.    
+
+`cd /` : takes you to the *root* directory.  
+    
+`cd ..` : takes you to the *parent* directory of the *current* directory.   
+
+`cd -` : takes you to the previous directory you were in.   
+
+`cd dir1` : takes you from your *current* directory to the `dir1` directory.  
 
 `ls` : lists the contents of the *current* directory.   
-    `ls -a` : lists all the files and directories including hidden ones.  
-    `ls -lSh` : lists all files and directories of the *current* directory, sorted by size with the size in human readable format (KB, MB, etc.).    
+
+`ls -a` : lists all the files and directories including hidden ones.  
+
+`ls -lSh` : lists all files and directories of the *current* directory, sorted by size with the size in human readable format (KB, MB, etc.).    
 
 `df -h` : prints disk usage to the terminal.  
 
@@ -61,9 +67,11 @@ Wildcard `?` : this wildcard matches exactly one character.
 
 ## Requires extra installation
 
-The following commands require extra installation:
-    - Download the executables first (e.g. `rsync.exe`) from [https://repo.msys2.org/msys/x86_64/](https://repo.msys2.org/msys/x86_64/).  
-    - If more DLL files are required, download the OpenSSL package from [https://repo.msys2.org/msys/x86_64/libopenssl-3.0.8-1-x86_64.pkg.tar.zst](https://repo.msys2.org/msys/x86_64/libopenssl-3.0.8-1-x86_64.pkg.tar.zst) and copy the required DLLs into the same folder as the executables.   
+The following commands require extra installation in Windows:  
+
+- Download the executables first (e.g. `rsync.exe`) from [https://repo.msys2.org/msys/x86_64/](https://repo.msys2.org/msys/x86_64/).   
+
+- If more DLL files are required, download the OpenSSL package (`libopenssl`) from [https://repo.msys2.org/msys/x86_64/](https://repo.msys2.org/msys/x86_64/) and copy the required DLLs into the same folder as the executables.   
 
 `zip -r zip1 dir1` : compresses the contents of the directory `dir1` into a zip file called `zip1`.   
 
